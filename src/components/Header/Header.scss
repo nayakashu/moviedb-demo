@@ -1,0 +1,64 @@
+@import '../../Common.scss';
+
+.header-container {
+  background: $header-bg-color;
+  .container {
+    .main-menu {
+      color: $text-color-light;
+    }
+  }
+
+  box-shadow: 1px 2px 5px $shadow-color;
+}
+
+.logo-div {
+  padding: 10px;
+  i.menu-icon {
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .logo {
+    margin-left: 20px;
+    i {
+      position: relative;
+      font-size: 40px;
+      top: 8px;
+    }
+    .logo-text {
+      position: relative;
+      top: -8px;
+      margin-left: 8px;
+      font-size: 15px;
+    }
+  }
+}
+
+ul.menu-items {
+  list-style: none;
+  position: relative;
+  top: 9px;
+  margin-bottom: 9px;
+
+  li {
+    font-size: 18px;
+    display: inline-block;
+    padding: 15px 30px 20px 30px;
+    cursor: pointer;
+    width: 30%;
+    text-align: center;
+    margin-right: 4px;
+    &:hover {
+      border-bottom: 5px solid $button-blue;
+      transition: 0.3s;
+    }
+  }
+
+  li.active {
+    border-bottom: 5px solid $button-blue;
+  }
+}
+
+.user-profile {
+  border-left: 1px solid $partition-color;
+  margin: 5px 0px;
+}
