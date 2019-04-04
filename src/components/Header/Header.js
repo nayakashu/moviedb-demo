@@ -24,7 +24,12 @@ export class Header extends Component {
 
     const loginSignupSection = (
       <span>
-        <button className="btn-login">Login</button>
+        <button
+          className="btn-login"
+          onClick={() => this.setState({ loggedIn: true })}
+        >
+          Login
+        </button>
         <button className="btn-signup">Sign Up</button>
       </span>
     );
@@ -34,9 +39,9 @@ export class Header extends Component {
         <div className="container">
           <div className="row main-menu">
             <div className="col-sm-3 logo-div">
-              <i class="material-icons menu-icon">menu</i>
+              <i className="material-icons menu-icon">menu</i>
               <span className="logo">
-                <i class="material-icons menu-icon">timeline</i>
+                <i className="material-icons menu-icon">timeline</i>
                 <span className="logo-text">MovieHunt</span>
               </span>
             </div>

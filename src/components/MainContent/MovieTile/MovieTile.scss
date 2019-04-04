@@ -1,0 +1,55 @@
+@import '../../../Common.scss';
+
+.movie-tile {
+  background: $header-bg-color;
+  color: $text-color-light;
+  position: relative;
+  padding: 15px;
+  box-shadow: 1px 2px 10px $shadow-color-dark;
+  margin-top: 100px;
+
+  @include border-radius(2px);
+
+  .popularity {
+    position: absolute;
+    right: 15px;
+    color: $highlight-green;
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 3px;
+    .bottom-border {
+      position: absolute;
+      border: 1px solid $highlight-green;
+      bottom: 0px;
+      width: 8px;
+      left: 20%;
+    }
+  }
+
+  img {
+    width: 45%;
+    display: inline-block;
+    position: absolute;
+    bottom: 25px;
+    box-shadow: 1px 2px 10px $shadow-color-dark;
+    @include border-radius(2px);
+  }
+
+  .movie-details {
+    padding-left: 52%;
+    height: 180px;
+
+    h4 {
+      font-size: 20px;
+    }
+    .release-date {
+      font-size: 11px;
+      color: $content-text-color;
+    }
+    .description {
+      margin-top: 10px;
+      color: $content-text-color;
+      font-size: 13px;
+    }
+  }
+}

@@ -75,6 +75,7 @@ ul.menu-items {
       padding-left: 8px;
       background: $button-blue;
       color: $text-color-light;
+      outline: none;
       @include border-radius(2px);
       i {
         font-size: 25px;
