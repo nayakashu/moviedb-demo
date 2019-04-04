@@ -2,7 +2,33 @@ import React, { Component } from 'react';
 import './Header.scss';
 
 export class Header extends Component {
+  constructor() {
+    super();
+    this.state = { loggedIn: false };
+  }
+
   render() {
+    const loggedInSection = (
+      <span>
+        <button className="btn-add">
+          <i class="material-icons menu-icon">add</i>
+          Add Movie
+        </button>
+        <img
+          className="avatar-img"
+          src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+          alt="User Avatar"
+        />
+      </span>
+    );
+
+    const loginSignupSection = (
+      <span>
+        <button className="btn-login">Login</button>
+        <button className="btn-signup">Sign Up</button>
+      </span>
+    );
+
     return (
       <div className="header-container">
         <div className="container">
@@ -21,7 +47,9 @@ export class Header extends Component {
                 <li>Discover</li>
               </ul>
             </div>
-            <div className="col-sm-3 user-profile" />
+            <div className="col-sm-3 login-section">
+              {this.state.loggedIn ? loggedInSection : loginSignupSection}
+            </div>
           </div>
         </div>
       </div>

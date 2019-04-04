@@ -7,3 +7,11 @@ $pure-black: #000000;
 $shadow-color: #2c2d3b;
 $button-blue: #2869bc;
 $partition-color: #32333f;
+
+// Sass mixins
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
