@@ -1,7 +1,7 @@
 import { FETCH_TOP_MOVIES } from '../actions/types';
 
 const initialState = {
-  topMovies: []
+  topMovies: null
 };
 
 export default function(state = initialState, action) {

@@ -3,23 +3,27 @@ import { connect } from 'react-redux';
 import './MainContent.scss';
 import MovieTile from './MovieTile/MovieTile';
 import { fetchTopMovies } from '../../actions/movieListActions';
+import Loader from '../common/Loader/Loader';
 
 export class MainContent extends Component {
-  componentDidMount() {
+  constructor(props) {
+    super(props);
+    // Fetch list of top movies
     this.props.fetchTopMovies();
-    console.log('Movies', this.props.topMovies);
   }
 
   render() {
     return (
       <div className="container top-rated-movies">
         <h3>Top Rated Movies</h3>
+        {this.props.topMovies ? null : <Loader />}
         <div className="row">
-          {this.props.topMovies.map(item => (
-            <div className="col-sm-4 col-xs-6" key={item.id}>
-              <MovieTile />
-            </div>
-          ))}
+          {this.props.topMovies &&
+            this.props.topMovies.map(item => (
+              <div className="col-sm-4 col-xs-6" key={item.id}>
+                <MovieTile movieDetails={item} />
+              </div>
+            ))}
         </div>
       </div>
     );

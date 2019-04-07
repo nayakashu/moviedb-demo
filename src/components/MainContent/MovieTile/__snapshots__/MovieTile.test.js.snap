@@ -13,6 +13,57 @@ ShallowWrapper {
     "simulateEvent": [Function],
     "unmount": [Function],
   },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`MainContent renders correctly 2`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieTile
+    movieDetails={
+      Object {
+        "title": "This is a very very very long Title to test slicing function",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
@@ -22,31 +73,28 @@ ShallowWrapper {
         <span
           className="popularity"
         >
-          89%
+          NaN
+          %
           <span
             className="bottom-border"
           />
         </span>,
         <img
-          alt="Title"
-          src="https://image.tmdb.org/t/p/w200/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+          alt="This is a very very very long Title to test slicing function"
+          src="https://image.tmdb.org/t/p/w500/undefined"
         />,
         <div
           className="movie-details"
         >
           <h4>
-            Fight club
+            This is a very very very long  ...
           </h4>
           <div
             className="release-date"
-          >
-            14 February 2019
-          </div>
+          />
           <div
             className="description"
-          >
-            A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.
-          </div>
+          />
         </div>,
       ],
       "className": "movie-tile",
@@ -59,7 +107,8 @@ ShallowWrapper {
         "nodeType": "host",
         "props": Object {
           "children": Array [
-            "89%",
+            NaN,
+            "%",
             <span
               className="bottom-border"
             />,
@@ -68,7 +117,8 @@ ShallowWrapper {
         },
         "ref": null,
         "rendered": Array [
-          "89%",
+          NaN,
+          "%",
           Object {
             "instance": null,
             "key": undefined,
@@ -88,8 +138,8 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "Title",
-          "src": "https://image.tmdb.org/t/p/w200/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+          "alt": "This is a very very very long Title to test slicing function",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
         },
         "ref": null,
         "rendered": null,
@@ -102,18 +152,14 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h4>
-              Fight club
+              This is a very very very long  ...
             </h4>,
             <div
               className="release-date"
-            >
-              14 February 2019
-            </div>,
+            />,
             <div
               className="description"
-            >
-              A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.
-            </div>,
+            />,
           ],
           "className": "movie-details",
         },
@@ -124,10 +170,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Fight club",
+              "children": "This is a very very very long  ...",
             },
             "ref": null,
-            "rendered": "Fight club",
+            "rendered": "This is a very very very long  ...",
             "type": "h4",
           },
           Object {
@@ -135,11 +181,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "14 February 2019",
+              "children": undefined,
               "className": "release-date",
             },
             "ref": null,
-            "rendered": "14 February 2019",
+            "rendered": null,
             "type": "div",
           },
           Object {
@@ -147,11 +193,11 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.",
+              "children": undefined,
               "className": "description",
             },
             "ref": null,
-            "rendered": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.",
+            "rendered": null,
             "type": "div",
           },
         ],
@@ -170,31 +216,28 @@ ShallowWrapper {
           <span
             className="popularity"
           >
-            89%
+            NaN
+            %
             <span
               className="bottom-border"
             />
           </span>,
           <img
-            alt="Title"
-            src="https://image.tmdb.org/t/p/w200/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
+            alt="This is a very very very long Title to test slicing function"
+            src="https://image.tmdb.org/t/p/w500/undefined"
           />,
           <div
             className="movie-details"
           >
             <h4>
-              Fight club
+              This is a very very very long  ...
             </h4>
             <div
               className="release-date"
-            >
-              14 February 2019
-            </div>
+            />
             <div
               className="description"
-            >
-              A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.
-            </div>
+            />
           </div>,
         ],
         "className": "movie-tile",
@@ -207,7 +250,8 @@ ShallowWrapper {
           "nodeType": "host",
           "props": Object {
             "children": Array [
-              "89%",
+              NaN,
+              "%",
               <span
                 className="bottom-border"
               />,
@@ -216,7 +260,8 @@ ShallowWrapper {
           },
           "ref": null,
           "rendered": Array [
-            "89%",
+            NaN,
+            "%",
             Object {
               "instance": null,
               "key": undefined,
@@ -236,8 +281,8 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "Title",
-            "src": "https://image.tmdb.org/t/p/w200/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg",
+            "alt": "This is a very very very long Title to test slicing function",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
           },
           "ref": null,
           "rendered": null,
@@ -250,18 +295,14 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h4>
-                Fight club
+                This is a very very very long  ...
               </h4>,
               <div
                 className="release-date"
-              >
-                14 February 2019
-              </div>,
+              />,
               <div
                 className="description"
-              >
-                A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.
-              </div>,
+              />,
             ],
             "className": "movie-details",
           },
@@ -272,10 +313,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Fight club",
+                "children": "This is a very very very long  ...",
               },
               "ref": null,
-              "rendered": "Fight club",
+              "rendered": "This is a very very very long  ...",
               "type": "h4",
             },
             Object {
@@ -283,11 +324,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "14 February 2019",
+                "children": undefined,
                 "className": "release-date",
               },
               "ref": null,
-              "rendered": "14 February 2019",
+              "rendered": null,
               "type": "div",
             },
             Object {
@@ -295,11 +336,11 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.",
+                "children": undefined,
                 "className": "description",
               },
               "ref": null,
-              "rendered": "A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy.",
+              "rendered": null,
               "type": "div",
             },
           ],
@@ -321,6 +362,7 @@ ShallowWrapper {
           "getChildContext": Object {
             "calledByRenderer": false,
           },
+          "getDerivedStateFromError": true,
           "getDerivedStateFromProps": Object {
             "hasShouldComponentUpdateBug": false,
           },
@@ -332,5 +374,339 @@ ShallowWrapper {
       },
     },
   },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`MainContent renders correctly 3`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieTile
+    movieDetails={
+      Object {
+        "title": "This is a very very very long Title to test slicing function",
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="popularity"
+        >
+          NaN
+          %
+          <span
+            className="bottom-border"
+          />
+        </span>,
+        <img
+          alt="This is a very very very long Title to test slicing function"
+          src="https://image.tmdb.org/t/p/w500/undefined"
+        />,
+        <div
+          className="movie-details"
+        >
+          <h4>
+            This is a very very very long  ...
+          </h4>
+          <div
+            className="release-date"
+          />
+          <div
+            className="description"
+          />
+        </div>,
+      ],
+      "className": "movie-tile",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            NaN,
+            "%",
+            <span
+              className="bottom-border"
+            />,
+          ],
+          "className": "popularity",
+        },
+        "ref": null,
+        "rendered": Array [
+          NaN,
+          "%",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "bottom-border",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "This is a very very very long Title to test slicing function",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              This is a very very very long  ...
+            </h4>,
+            <div
+              className="release-date"
+            />,
+            <div
+              className="description"
+            />,
+          ],
+          "className": "movie-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This is a very very very long  ...",
+            },
+            "ref": null,
+            "rendered": "This is a very very very long  ...",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "release-date",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="popularity"
+          >
+            NaN
+            %
+            <span
+              className="bottom-border"
+            />
+          </span>,
+          <img
+            alt="This is a very very very long Title to test slicing function"
+            src="https://image.tmdb.org/t/p/w500/undefined"
+          />,
+          <div
+            className="movie-details"
+          >
+            <h4>
+              This is a very very very long  ...
+            </h4>
+            <div
+              className="release-date"
+            />
+            <div
+              className="description"
+            />
+          </div>,
+        ],
+        "className": "movie-tile",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              NaN,
+              "%",
+              <span
+                className="bottom-border"
+              />,
+            ],
+            "className": "popularity",
+          },
+          "ref": null,
+          "rendered": Array [
+            NaN,
+            "%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "bottom-border",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "This is a very very very long Title to test slicing function",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                This is a very very very long  ...
+              </h4>,
+              <div
+                className="release-date"
+              />,
+              <div
+                className="description"
+              />,
+            ],
+            "className": "movie-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This is a very very very long  ...",
+              },
+              "ref": null,
+              "rendered": "This is a very very very long  ...",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "release-date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

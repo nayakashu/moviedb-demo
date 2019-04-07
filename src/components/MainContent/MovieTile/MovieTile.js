@@ -1,25 +1,47 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './MovieTile.scss';
+import PropTypes from 'prop-types';
+import { POSTER_BASE_URL } from '../../../appConfig';
 
-export default function MovieTile() {
-  return (
-    <div className="movie-tile">
-      <span className="popularity">
-        89%
-        <span className="bottom-border" />
-      </span>
-      <img
-        src="https://image.tmdb.org/t/p/w200/adw6Lq9FiC9zjYEpOqfq03ituwp.jpg"
-        alt="Title"
-      />
-      <div className="movie-details">
-        <h4>Fight club</h4>
-        <div className="release-date">14 February 2019</div>
-        <div className="description">
-          A ticking-time-bomb insomniac and a slippery soap salesman channel
-          primal male aggression into a shocking new form of therapy.
+export class MovieTile extends Component {
+  constructor(props) {
+    super(props);
+  }
+
+  sliceDesc(desc, sliceLength = 85) {
+    if (desc && desc.length > sliceLength) {
+      return desc.slice(0, sliceLength) + ' ...';
+    }
+    return desc;
+  }
+
+  render() {
+    const movieDetails = this.props.movieDetails;
+
+    return movieDetails ? (
+      <div className="movie-tile">
+        <span className="popularity">
+          {Math.round(movieDetails.popularity)}%
+          <span className="bottom-border" />
+        </span>
+        <img
+          src={POSTER_BASE_URL + movieDetails.poster_path}
+          alt={movieDetails.title}
+        />
+        <div className="movie-details">
+          <h4>{this.sliceDesc(movieDetails.title, 30)}</h4>
+          <div className="release-date">{movieDetails.release_date}</div>
+          <div className="description">
+            {this.sliceDesc(movieDetails.overview)}
+          </div>
         </div>
       </div>
-    </div>
-  );
+    ) : null;
+  }
 }
+
+MovieTile.propTypes = {
+  movieDetails: PropTypes.any
+};
+
+export default MovieTile;
