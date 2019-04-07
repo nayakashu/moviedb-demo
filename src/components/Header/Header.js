@@ -1,12 +1,9 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { openLoginForm } from '../../actions/modalActions';
 import './Header.scss';
 
 export class Header extends Component {
-  constructor() {
-    super();
-    this.state = { loggedIn: false };
-  }
-
   render() {
     const loggedInSection = (
       <span>
@@ -24,10 +21,7 @@ export class Header extends Component {
 
     const loginSignupSection = (
       <span>
-        <button
-          className="btn-login"
-          onClick={() => this.setState({ loggedIn: true })}
-        >
+        <button className="btn-login" onClick={this.props.openLoginForm}>
           Login
         </button>
         <button className="btn-signup">Sign Up</button>
@@ -53,7 +47,7 @@ export class Header extends Component {
               </ul>
             </div>
             <div className="col-sm-3 login-section">
-              {this.state.loggedIn ? loggedInSection : loginSignupSection}
+              {true ? loginSignupSection : loggedInSection}
             </div>
           </div>
         </div>
@@ -62,4 +56,7 @@ export class Header extends Component {
   }
 }
 
-export default Header;
+export default connect(
+  null,
+  { openLoginForm }
+)(Header);

@@ -4,10 +4,6 @@ import PropTypes from 'prop-types';
 import { POSTER_BASE_URL } from '../../../appConfig';
 
 export class MovieTile extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   sliceDesc(desc, sliceLength = 85) {
     if (desc && desc.length > sliceLength) {
       return desc.slice(0, sliceLength) + ' ...';

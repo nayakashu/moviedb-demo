@@ -1,0 +1,20 @@
+@import '../../../Common.scss';
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    background: none;
+    div {
+      box-shadow: 2px 2px 10px $pure-black;
+    }
+  }
+}
