@@ -20,6 +20,13 @@ export class MovieTile extends Component {
           {Math.round(movieDetails.popularity)}%
           <span className="bottom-border" />
         </span>
+
+        {this.props.editable ? (
+          <i className="material-icons ellipsis">close</i>
+        ) : (
+          <i className="material-icons btn-like">favorite_border</i>
+        )}
+
         <img
           src={POSTER_BASE_URL + movieDetails.poster_path}
           alt={movieDetails.title}
@@ -37,7 +44,8 @@ export class MovieTile extends Component {
 }
 
 MovieTile.propTypes = {
-  movieDetails: PropTypes.any
+  movieDetails: PropTypes.any,
+  editable: PropTypes.any
 };
 
 export default MovieTile;

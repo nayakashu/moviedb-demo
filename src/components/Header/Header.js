@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { openLoginForm } from '../../actions/modalActions';
+import { toggleLeftNav } from '../../actions/navActions';
+
 import './Header.scss';
 
 export class Header extends Component {
+  componentDidMount() {
+    console.log('saware', window.location.hash.substr(2));
+  }
+
   render() {
     const loggedInSection = (
       <span>
@@ -33,7 +40,12 @@ export class Header extends Component {
         <div className="container">
           <div className="row main-menu">
             <div className="col-sm-3 logo-div">
-              <i className="material-icons menu-icon">menu</i>
+              <i
+                className="material-icons menu-icon"
+                onClick={this.props.toggleLeftNav}
+              >
+                menu
+              </i>
               <span className="logo">
                 <i className="material-icons menu-icon">timeline</i>
                 <span className="logo-text">MovieHunt</span>
@@ -41,8 +53,12 @@ export class Header extends Component {
             </div>
             <div className="col-sm-6">
               <ul className="menu-items">
-                <li className="active">Top Rated</li>
-                <li>Movies</li>
+                <li className="active">
+                  <Link to="/">Top Rated</Link>
+                </li>
+                <li>
+                  <Link to="/mymovies">My Movies</Link>
+                </li>
                 <li>Discover</li>
               </ul>
             </div>
@@ -58,5 +74,5 @@ export class Header extends Component {
 
 export default connect(
   null,
-  { openLoginForm }
+  { openLoginForm, toggleLeftNav }
 )(Header);

@@ -56,6 +56,12 @@ ul.menu-items {
       border-bottom: 5px solid $button-blue;
       transition: 0.3s;
     }
+    a {
+      color: inherit;
+      &:hover {
+        text-decoration: none;
+      }
+    }
   }
 
   li.active {

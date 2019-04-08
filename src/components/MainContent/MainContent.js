@@ -6,6 +6,8 @@ import { fetchTopMovies } from '../../actions/movieListActions';
 import LoginModal from '../common/LoginModal/LoginModal';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import TopMovies from './TopMovies/TopMovies';
+import MyMovies from './MyMovies/MyMovies';
+import LeftNav from '../common/LeftNav/LeftNav';
 
 export class MainContent extends Component {
   constructor(props) {
@@ -16,10 +18,12 @@ export class MainContent extends Component {
 
   render() {
     const loginModal = this.props.modalOpen ? <LoginModal /> : null;
+    const leftNav = this.props.leftNavOpen ? <LeftNav /> : null;
 
     return (
       <div className="container">
         <Route exact path="/" component={TopMovies} />
+        <Route exact path="/mymovies" component={MyMovies} />
 
         <ReactCSSTransitionGroup
           transitionName="login-tran"
@@ -27,6 +31,7 @@ export class MainContent extends Component {
           transitionLeaveTimeout={300}
         >
           {loginModal}
+          {leftNav}
         </ReactCSSTransitionGroup>
       </div>
     );
@@ -34,7 +39,8 @@ export class MainContent extends Component {
 }
 
 const mapStateToProps = state => ({
-  modalOpen: state.modalState.modalOpen
+  modalOpen: state.modalState.modalOpen,
+  leftNavOpen: state.navState.leftNavOpen
 });
 
 export default connect(

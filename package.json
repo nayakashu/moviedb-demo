@@ -47,7 +47,8 @@
       "!src/setupTests.js",
       "!src/tempPolyfills.js",
       "!src/App/store.js",
-      "!src/serviceWorker.js"
+      "!src/serviceWorker.js",
+      "!src/store.js"
     ]
   }
 }

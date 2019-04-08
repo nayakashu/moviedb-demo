@@ -51,7 +51,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <MovieTile
     movieDetails={
       Object {
-        "title": "This is a very very very long Title to test slicing function",
+        "title": "Short Title",
       }
     }
   />,
@@ -80,14 +80,14 @@ ShallowWrapper {
           />
         </span>,
         <img
-          alt="This is a very very very long Title to test slicing function"
+          alt="Short Title"
           src="https://image.tmdb.org/t/p/w500/undefined"
         />,
         <div
           className="movie-details"
         >
           <h4>
-            This is a very very very long  ...
+            Short Title
           </h4>
           <div
             className="release-date"
@@ -138,7 +138,7 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "alt": "This is a very very very long Title to test slicing function",
+          "alt": "Short Title",
           "src": "https://image.tmdb.org/t/p/w500/undefined",
         },
         "ref": null,
@@ -152,7 +152,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <h4>
-              This is a very very very long  ...
+              Short Title
             </h4>,
             <div
               className="release-date"
@@ -170,10 +170,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "This is a very very very long  ...",
+              "children": "Short Title",
             },
             "ref": null,
-            "rendered": "This is a very very very long  ...",
+            "rendered": "Short Title",
             "type": "h4",
           },
           Object {
@@ -223,14 +223,14 @@ ShallowWrapper {
             />
           </span>,
           <img
-            alt="This is a very very very long Title to test slicing function"
+            alt="Short Title"
             src="https://image.tmdb.org/t/p/w500/undefined"
           />,
           <div
             className="movie-details"
           >
             <h4>
-              This is a very very very long  ...
+              Short Title
             </h4>
             <div
               className="release-date"
@@ -281,7 +281,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "alt": "This is a very very very long Title to test slicing function",
+            "alt": "Short Title",
             "src": "https://image.tmdb.org/t/p/w500/undefined",
           },
           "ref": null,
@@ -295,7 +295,7 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <h4>
-                This is a very very very long  ...
+                Short Title
               </h4>,
               <div
                 className="release-date"
@@ -313,10 +313,10 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "This is a very very very long  ...",
+                "children": "Short Title",
               },
               "ref": null,
-              "rendered": "This is a very very very long  ...",
+              "rendered": "Short Title",
               "type": "h4",
             },
             Object {

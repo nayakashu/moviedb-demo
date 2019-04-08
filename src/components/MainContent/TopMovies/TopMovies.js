@@ -2,9 +2,14 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import MovieTile from '../MovieTile/MovieTile';
 import Loader from '../../common/Loader/Loader';
+import { closeLeftNav } from '../../../actions/navActions';
 import './TopMovies.scss';
 
 export class TopMovies extends Component {
+  componentDidMount() {
+    this.props.closeLeftNav();
+  }
+
   render() {
     return (
       <div className="top-rated-movies">
@@ -29,5 +34,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  {}
+  { closeLeftNav }
 )(TopMovies);

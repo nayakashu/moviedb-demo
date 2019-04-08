@@ -1,7 +1,8 @@
-import { FETCH_TOP_MOVIES } from '../actions/types';
+import { FETCH_TOP_MOVIES, FETCH_USER_MOVIES } from '../actions/types';
 
 const initialState = {
-  topMovies: null
+  topMovies: null,
+  userMovies: null
 };
 
 export default function(state = initialState, action) {
@@ -11,6 +12,13 @@ export default function(state = initialState, action) {
       return {
         ...state,
         topMovies: action.payload
+      };
+
+    // Show user's list of movie
+    case FETCH_USER_MOVIES:
+      return {
+        ...state,
+        userMovies: action.payload
       };
 
     default:
