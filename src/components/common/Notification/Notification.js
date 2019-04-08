@@ -22,7 +22,12 @@ export class Notification extends Component {
           <i className="material-icons icon-notif">notifications</i>
           {this.props.message}
         </div>
-        <i className="material-icons btn-close">close</i>
+        <i
+          className="material-icons btn-close"
+          onClick={this.props.hideNotification}
+        >
+          close
+        </i>
       </div>
     );
   }

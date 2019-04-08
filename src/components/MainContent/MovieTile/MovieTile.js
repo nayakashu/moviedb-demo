@@ -50,9 +50,13 @@ export class MovieTile extends Component {
         ) : (
           <i
             className="material-icons btn-like"
-            onClick={() => this.addMovieToList(movieDetails.id)}
+            onClick={() => {
+              this.props.isAdded
+                ? this.deleteMovie(movieDetails.id)
+                : this.addMovieToList(movieDetails.id);
+            }}
           >
-            favorite_border
+            {this.props.isAdded ? 'favorite' : 'favorite_border'}
           </i>
         )}
 
@@ -74,7 +78,8 @@ export class MovieTile extends Component {
 
 MovieTile.propTypes = {
   movieDetails: PropTypes.any,
-  editable: PropTypes.any
+  editable: PropTypes.bool,
+  isAdded: PropTypes.bool
 };
 
 export default connect(

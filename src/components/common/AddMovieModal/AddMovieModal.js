@@ -1,12 +1,24 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { closeAddMovie } from '../../../actions/modalActions';
+import { closeAddMovie, showNotification } from '../../../actions/modalActions';
+import { addNewMovie } from '../../../actions/movieListActions';
 import './AddMovieModal.scss';
 import makeModal from '../../hocs/makeModal/makeModal';
+import { NOTIF_TYPES } from '../../../appConfig';
 
 export class AddMovieModal extends Component {
   addMovie = () => {
     this.props.closeAddMovie();
+    this.props.showNotification(
+      'New movie added successfully',
+      NOTIF_TYPES.SUCCESS
+    );
+
+    // Navigate to my movies page
+    window.location = '#/mymovies';
+
+    // Add the movie - Grave of the fireflies as default
+    this.props.addNewMovie(12477);
   };
 
   render() {
@@ -59,6 +71,6 @@ export class AddMovieModal extends Component {
 export default makeModal(
   connect(
     null,
-    { closeAddMovie }
+    { closeAddMovie, showNotification, addNewMovie }
   )(AddMovieModal)
 );

@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import MovieTile from '../MovieTile/MovieTile';
 import Loader from '../../common/Loader/Loader';
 import { closeLeftNav, setActivePage } from '../../../actions/navActions';
+import { isMovieAdded } from '../../../services/commonService';
 import './TopMovies.scss';
 
 export class TopMovies extends Component {
@@ -20,7 +21,10 @@ export class TopMovies extends Component {
           {this.props.topMovies &&
             this.props.topMovies.map(item => (
               <div className="col-sm-4 col-xs-6" key={item.id}>
-                <MovieTile movieDetails={item} />
+                <MovieTile
+                  movieDetails={item}
+                  isAdded={isMovieAdded(item.id, this.props.userMovies)}
+                />
               </div>
             ))}
         </div>
@@ -30,7 +34,8 @@ export class TopMovies extends Component {
 }
 
 const mapStateToProps = state => ({
-  topMovies: state.movieListState.topMovies
+  topMovies: state.movieListState.topMovies,
+  userMovies: state.movieListState.userMovies
 });
 
 export default connect(
