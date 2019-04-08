@@ -1,0 +1,34 @@
+@import '../../../Common.scss';
+.row {
+  .icon-overlay {
+    i {
+      position: absolute;
+      color: #fff;
+      right: 39px;
+      top: 19px;
+      color: $content-text-color;
+    }
+  }
+
+  .col-sm-6 {
+    button.btn-cancel {
+      background: transparent;
+      border: none;
+      width: 100%;
+      padding: 20px;
+      color: $content-text-color;
+      outline: none;
+    }
+  }
+}
+
+.txt-movie-desc {
+  width: 100%;
+  background: $body-bg-color;
+  border: none;
+  padding: 20px;
+  margin-bottom: 25px;
+  height: 150px;
+  outline: none;
+  color: $content-text-color;
+}

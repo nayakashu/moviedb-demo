@@ -1,21 +1,17 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { openLoginForm } from '../../actions/modalActions';
+import { openLoginForm, openAddMovie } from '../../actions/modalActions';
 import { toggleLeftNav } from '../../actions/navActions';
 
 import './Header.scss';
 
 export class Header extends Component {
-  componentDidMount() {
-    console.log('saware', window.location.hash.substr(2));
-  }
-
   render() {
     const loggedInSection = (
       <span>
-        <button className="btn-add">
-          <i class="material-icons menu-icon">add</i>
+        <button className="btn-add" onClick={this.props.openAddMovie}>
+          <i className="material-icons menu-icon">add</i>
           Add Movie
         </button>
         <img
@@ -53,17 +49,21 @@ export class Header extends Component {
             </div>
             <div className="col-sm-6">
               <ul className="menu-items">
-                <li className="active">
+                <li className={this.props.activePage === '#/' ? 'active' : ''}>
                   <Link to="/">Top Rated</Link>
                 </li>
-                <li>
+                <li
+                  className={
+                    this.props.activePage === '#/mymovies' ? 'active' : ''
+                  }
+                >
                   <Link to="/mymovies">My Movies</Link>
                 </li>
                 <li>Discover</li>
               </ul>
             </div>
             <div className="col-sm-3 login-section">
-              {true ? loginSignupSection : loggedInSection}
+              {this.props.isUserLoggedIn ? loggedInSection : loginSignupSection}
             </div>
           </div>
         </div>
@@ -72,7 +72,12 @@ export class Header extends Component {
   }
 }
 
+const mapStateToProps = state => ({
+  activePage: state.navState.activePage,
+  isUserLoggedIn: state.navState.isUserLoggedIn
+});
+
 export default connect(
-  null,
-  { openLoginForm, toggleLeftNav }
+  mapStateToProps,
+  { openLoginForm, toggleLeftNav, openAddMovie }
 )(Header);

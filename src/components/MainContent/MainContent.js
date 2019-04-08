@@ -8,6 +8,7 @@ import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
 import TopMovies from './TopMovies/TopMovies';
 import MyMovies from './MyMovies/MyMovies';
 import LeftNav from '../common/LeftNav/LeftNav';
+import AddMovieModal from '../common/AddMovieModal/AddMovieModal';
 
 export class MainContent extends Component {
   constructor(props) {
@@ -17,7 +18,10 @@ export class MainContent extends Component {
   }
 
   render() {
-    const loginModal = this.props.modalOpen ? <LoginModal /> : null;
+    const loginModal = this.props.loginModalOpen ? <LoginModal /> : null;
+    const addMovieModal = this.props.addMovieModalOpen ? (
+      <AddMovieModal />
+    ) : null;
     const leftNav = this.props.leftNavOpen ? <LeftNav /> : null;
 
     return (
@@ -32,6 +36,7 @@ export class MainContent extends Component {
         >
           {loginModal}
           {leftNav}
+          {addMovieModal}
         </ReactCSSTransitionGroup>
       </div>
     );
@@ -39,7 +44,8 @@ export class MainContent extends Component {
 }
 
 const mapStateToProps = state => ({
-  modalOpen: state.modalState.modalOpen,
+  loginModalOpen: state.modalState.loginModalOpen,
+  addMovieModalOpen: state.modalState.addMovieModalOpen,
   leftNavOpen: state.navState.leftNavOpen
 });
 

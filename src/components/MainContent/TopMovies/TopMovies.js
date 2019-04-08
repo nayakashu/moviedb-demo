@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import MovieTile from '../MovieTile/MovieTile';
 import Loader from '../../common/Loader/Loader';
-import { closeLeftNav } from '../../../actions/navActions';
+import { closeLeftNav, setActivePage } from '../../../actions/navActions';
 import './TopMovies.scss';
 
 export class TopMovies extends Component {
   componentDidMount() {
     this.props.closeLeftNav();
+    this.props.setActivePage();
   }
 
   render() {
@@ -34,5 +35,5 @@ const mapStateToProps = state => ({
 
 export default connect(
   mapStateToProps,
-  { closeLeftNav }
+  { closeLeftNav, setActivePage }
 )(TopMovies);

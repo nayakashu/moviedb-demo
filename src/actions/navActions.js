@@ -1,4 +1,10 @@
-import { OPEN_LEFT_NAV, CLOSE_LEFT_NAV, TOGGLE_LEFT_NAV } from './types';
+import {
+  OPEN_LEFT_NAV,
+  CLOSE_LEFT_NAV,
+  TOGGLE_LEFT_NAV,
+  SET_ACTIVE_PAGE,
+  SET_USER_LOGIN
+} from './types';
 
 // Open left nav menu
 export const openLeftNav = () => dispatch => {
@@ -18,5 +24,20 @@ export const closeLeftNav = () => dispatch => {
 export const toggleLeftNav = () => dispatch => {
   dispatch({
     type: TOGGLE_LEFT_NAV
+  });
+};
+
+// Set active page
+export const setActivePage = () => dispatch => {
+  dispatch({
+    type: SET_ACTIVE_PAGE,
+    payload: window.location.hash
+  });
+};
+
+// Set logged in user
+export const setUserLogin = () => dispatch => {
+  dispatch({
+    type: SET_USER_LOGIN
   });
 };

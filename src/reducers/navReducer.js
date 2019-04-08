@@ -1,11 +1,15 @@
 import {
   OPEN_LEFT_NAV,
   CLOSE_LEFT_NAV,
-  TOGGLE_LEFT_NAV
+  TOGGLE_LEFT_NAV,
+  SET_ACTIVE_PAGE,
+  SET_USER_LOGIN
 } from '../actions/types';
 
 const initialState = {
-  leftNavOpen: false
+  leftNavOpen: false,
+  activePage: '/',
+  isUserLoggedIn: false
 };
 
 export default function(state = initialState, action) {
@@ -29,6 +33,20 @@ export default function(state = initialState, action) {
       return {
         ...state,
         leftNavOpen: !state.leftNavOpen
+      };
+
+    // Set active page
+    case SET_ACTIVE_PAGE:
+      return {
+        ...state,
+        activePage: action.payload
+      };
+
+    // Set user login
+    case SET_USER_LOGIN:
+      return {
+        ...state,
+        isUserLoggedIn: true
       };
 
     default:

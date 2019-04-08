@@ -1,7 +1,13 @@
-import { OPEN_LOGIN_FORM, CLOSE_LOGIN_FORM } from '../actions/types';
+import {
+  OPEN_LOGIN_FORM,
+  CLOSE_LOGIN_FORM,
+  OPEN_ADD_MOVIE,
+  CLOSE_ADD_MOVIE
+} from '../actions/types';
 
 const initialState = {
-  modalOpen: false
+  loginModalOpen: false,
+  addMovieModalOpen: false
 };
 
 export default function(state = initialState, action) {
@@ -10,14 +16,28 @@ export default function(state = initialState, action) {
     case OPEN_LOGIN_FORM:
       return {
         ...state,
-        modalOpen: true
+        loginModalOpen: true
       };
 
     // Close login form
     case CLOSE_LOGIN_FORM:
       return {
         ...state,
-        modalOpen: false
+        loginModalOpen: false
+      };
+
+    // Open add movie form
+    case OPEN_ADD_MOVIE:
+      return {
+        ...state,
+        addMovieModalOpen: true
+      };
+
+    // Close add movie form
+    case CLOSE_ADD_MOVIE:
+      return {
+        ...state,
+        addMovieModalOpen: false
       };
 
     default:
