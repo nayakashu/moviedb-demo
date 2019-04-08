@@ -3,6 +3,7 @@
 $body-bg-color: #363748;
 $header-bg-color: #262734;
 $text-color-light: aliceblue;
+$white: #ffffff;
 $pure-black: #000000;
 $shadow-color: #2c2d3b;
 $shadow-color-dark: #252525;
@@ -11,6 +12,8 @@ $partition-color: #32333f;
 $content-text-color: #b5b5b5;
 $highlight-green: #59d28e;
 $heart-red: #be1123;
+$success-modal-bg: #58c090;
+$danger-modal-bg: #ed6e7e;
 
 // Sass mixins
 @mixin border-radius($radius) {

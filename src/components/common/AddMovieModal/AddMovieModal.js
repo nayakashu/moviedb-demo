@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { closeLoginForm } from '../../../actions/modalActions';
+import { closeAddMovie } from '../../../actions/modalActions';
 import './AddMovieModal.scss';
 import makeModal from '../../hocs/makeModal/makeModal';
 
 export class AddMovieModal extends Component {
+  addMovie = () => {
+    this.props.closeAddMovie();
+  };
+
   render() {
     return (
       <div className="login-form">
@@ -15,7 +19,7 @@ export class AddMovieModal extends Component {
 
         <i
           className="material-icons btn-close"
-          onClick={this.props.closeLoginForm}
+          onClick={this.props.closeAddMovie}
         >
           close
         </i>
@@ -36,10 +40,14 @@ export class AddMovieModal extends Component {
           <textarea className="txt-movie-desc" placeholder="Movie overview" />
           <div className="row">
             <div className="col-sm-6">
-              <button className="btn-cancel">Cancel</button>
+              <button className="btn-cancel" onClick={this.props.closeAddMovie}>
+                Cancel
+              </button>
             </div>
             <div className="col-sm-6">
-              <button className="btn-login">Add Movie</button>
+              <button className="btn-login" onClick={this.addMovie}>
+                Add Movie
+              </button>
             </div>
           </div>
         </form>
@@ -51,6 +59,6 @@ export class AddMovieModal extends Component {
 export default makeModal(
   connect(
     null,
-    { closeLoginForm }
+    { closeAddMovie }
   )(AddMovieModal)
 );

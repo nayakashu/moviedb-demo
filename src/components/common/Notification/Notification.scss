@@ -1,0 +1,34 @@
+@import '../../../Common.scss';
+
+.notif-container {
+  border: none;
+  width: 550px;
+  position: absolute;
+  top: 114px;
+  right: 14px;
+  color: $white;
+  font-size: 15px;
+  padding: 15px 20px 20px 20px;
+
+  i.icon-notif {
+    font-size: 20px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+  }
+
+  i.btn-close {
+    float: right;
+    position: absolute;
+    top: 17px;
+    right: 17px;
+  }
+}
+
+.success {
+  background: $success-modal-bg;
+}
+
+.danger {
+  background: $danger-modal-bg;
+}

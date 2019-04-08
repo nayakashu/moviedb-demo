@@ -9,3 +9,8 @@ export const ENDPOINT_URLS = {
   FETCH_TOP_MOVIES: `${BASE_URL}top_rated?api_key=${API_KEY}&page=1`,
   FETCH_MOVIE_DETAILS: `${BASE_URL}<MOVIE_ID>?api_key=${API_KEY}&page=1`
 };
+
+export const NOTIF_TYPES = {
+  SUCCESS: 'success',
+  DANGER: 'danger'
+};

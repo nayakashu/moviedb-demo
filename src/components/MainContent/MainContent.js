@@ -9,6 +9,8 @@ import TopMovies from './TopMovies/TopMovies';
 import MyMovies from './MyMovies/MyMovies';
 import LeftNav from '../common/LeftNav/LeftNav';
 import AddMovieModal from '../common/AddMovieModal/AddMovieModal';
+import Notification from '../common/Notification/Notification';
+import { NOTIF_TYPES } from '../../appConfig';
 
 export class MainContent extends Component {
   constructor(props) {
@@ -23,6 +25,7 @@ export class MainContent extends Component {
       <AddMovieModal />
     ) : null;
     const leftNav = this.props.leftNavOpen ? <LeftNav /> : null;
+    const notification = <Notification type={NOTIF_TYPES.DANGER} />;
 
     return (
       <div className="container">
@@ -37,6 +40,7 @@ export class MainContent extends Component {
           {loginModal}
           {leftNav}
           {addMovieModal}
+          {notification}
         </ReactCSSTransitionGroup>
       </div>
     );
