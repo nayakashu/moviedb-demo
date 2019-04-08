@@ -49,6 +49,7 @@ ShallowWrapper {
           />
           <button
             className="btn-login"
+            onClick={[Function]}
           >
             Login
           </button>
@@ -154,6 +155,7 @@ ShallowWrapper {
             />,
             <button
               className="btn-login"
+              onClick={[Function]}
             >
               Login
             </button>,
@@ -192,6 +194,7 @@ ShallowWrapper {
             "props": Object {
               "children": "Login",
               "className": "btn-login",
+              "onClick": [Function],
             },
             "ref": null,
             "rendered": "Login",
@@ -314,6 +317,7 @@ ShallowWrapper {
             />
             <button
               className="btn-login"
+              onClick={[Function]}
             >
               Login
             </button>
@@ -419,6 +423,7 @@ ShallowWrapper {
               />,
               <button
                 className="btn-login"
+                onClick={[Function]}
               >
                 Login
               </button>,
@@ -457,6 +462,7 @@ ShallowWrapper {
               "props": Object {
                 "children": "Login",
                 "className": "btn-login",
+                "onClick": [Function],
               },
               "ref": null,
               "rendered": "Login",

@@ -1,6 +1,8 @@
 // Action types for movie list
 export const FETCH_TOP_MOVIES = 'FETCH_TOP_MOVIES';
 export const FETCH_USER_MOVIES = 'FETCH_USER_MOVIES';
+export const ADD_NEW_MOVIE = 'ADD_NEW_MOVIE';
+export const DELETE_MOVIE = 'DELETE_MOVIE';
 
 // Modal actions
 export const OPEN_LOGIN_FORM = 'OPEN_LOGIN_FORM';

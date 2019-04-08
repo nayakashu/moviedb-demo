@@ -79,6 +79,11 @@ ShallowWrapper {
             className="bottom-border"
           />
         </span>,
+        <i
+          className="material-icons btn-like"
+        >
+          favorite_border
+        </i>,
         <img
           alt="Short Title"
           src="https://image.tmdb.org/t/p/w500/undefined"
@@ -132,6 +137,18 @@ ShallowWrapper {
           },
         ],
         "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite_border",
+          "className": "material-icons btn-like",
+        },
+        "ref": null,
+        "rendered": "favorite_border",
+        "type": "i",
       },
       Object {
         "instance": null,
@@ -222,6 +239,11 @@ ShallowWrapper {
               className="bottom-border"
             />
           </span>,
+          <i
+            className="material-icons btn-like"
+          >
+            favorite_border
+          </i>,
           <img
             alt="Short Title"
             src="https://image.tmdb.org/t/p/w500/undefined"
@@ -275,6 +297,18 @@ ShallowWrapper {
             },
           ],
           "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite_border",
+            "className": "material-icons btn-like",
+          },
+          "ref": null,
+          "rendered": "favorite_border",
+          "type": "i",
         },
         Object {
           "instance": null,
@@ -412,6 +446,11 @@ ShallowWrapper {
             className="bottom-border"
           />
         </span>,
+        <i
+          className="material-icons btn-like"
+        >
+          favorite_border
+        </i>,
         <img
           alt="This is a very very very long Title to test slicing function"
           src="https://image.tmdb.org/t/p/w500/undefined"
@@ -465,6 +504,18 @@ ShallowWrapper {
           },
         ],
         "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite_border",
+          "className": "material-icons btn-like",
+        },
+        "ref": null,
+        "rendered": "favorite_border",
+        "type": "i",
       },
       Object {
         "instance": null,
@@ -555,6 +606,11 @@ ShallowWrapper {
               className="bottom-border"
             />
           </span>,
+          <i
+            className="material-icons btn-like"
+          >
+            favorite_border
+          </i>,
           <img
             alt="This is a very very very long Title to test slicing function"
             src="https://image.tmdb.org/t/p/w500/undefined"
@@ -608,6 +664,18 @@ ShallowWrapper {
             },
           ],
           "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite_border",
+            "className": "material-icons btn-like",
+          },
+          "ref": null,
+          "rendered": "favorite_border",
+          "type": "i",
         },
         Object {
           "instance": null,

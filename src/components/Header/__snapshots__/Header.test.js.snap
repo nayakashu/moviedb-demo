@@ -54,12 +54,22 @@ ShallowWrapper {
               className="menu-items"
             >
               <li
-                className="active"
+                className=""
               >
-                Top Rated
+                <Link
+                  to="/"
+                >
+                  Top Rated
+                </Link>
               </li>
-              <li>
-                Movies
+              <li
+                className=""
+              >
+                <Link
+                  to="/mymovies"
+                >
+                  My Movies
+                </Link>
               </li>
               <li>
                 Discover
@@ -125,12 +135,22 @@ ShallowWrapper {
               className="menu-items"
             >
               <li
-                className="active"
+                className=""
               >
-                Top Rated
+                <Link
+                  to="/"
+                >
+                  Top Rated
+                </Link>
               </li>
-              <li>
-                Movies
+              <li
+                className=""
+              >
+                <Link
+                  to="/mymovies"
+                >
+                  My Movies
+                </Link>
               </li>
               <li>
                 Discover
@@ -193,12 +213,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -329,12 +359,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -350,12 +390,22 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>,
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>,
                   <li>
                     Discover
@@ -370,11 +420,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Top Rated",
-                    "className": "active",
+                    "children": <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>,
+                    "className": "",
                   },
                   "ref": null,
-                  "rendered": "Top Rated",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Top Rated",
+                      "to": "/",
+                    },
+                    "ref": null,
+                    "rendered": "Top Rated",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -382,10 +447,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Movies",
+                    "children": <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>,
+                    "className": "",
                   },
                   "ref": null,
-                  "rendered": "Movies",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "My Movies",
+                      "to": "/mymovies",
+                    },
+                    "ref": null,
+                    "rendered": "My Movies",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -523,12 +604,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -594,12 +685,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -662,12 +763,22 @@ ShallowWrapper {
                   className="menu-items"
                 >
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>
                   <li>
                     Discover
@@ -798,12 +909,22 @@ ShallowWrapper {
                   className="menu-items"
                 >
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>
                   <li>
                     Discover
@@ -819,12 +940,22 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <li
-                      className="active"
+                      className=""
                     >
-                      Top Rated
+                      <Link
+                        to="/"
+                      >
+                        Top Rated
+                      </Link>
                     </li>,
-                    <li>
-                      Movies
+                    <li
+                      className=""
+                    >
+                      <Link
+                        to="/mymovies"
+                      >
+                        My Movies
+                      </Link>
                     </li>,
                     <li>
                       Discover
@@ -839,11 +970,26 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Top Rated",
-                      "className": "active",
+                      "children": <Link
+                        to="/"
+                      >
+                        Top Rated
+                      </Link>,
+                      "className": "",
                     },
                     "ref": null,
-                    "rendered": "Top Rated",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Top Rated",
+                        "to": "/",
+                      },
+                      "ref": null,
+                      "rendered": "Top Rated",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {
@@ -851,10 +997,26 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Movies",
+                      "children": <Link
+                        to="/mymovies"
+                      >
+                        My Movies
+                      </Link>,
+                      "className": "",
                     },
                     "ref": null,
-                    "rendered": "Movies",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "My Movies",
+                        "to": "/mymovies",
+                      },
+                      "ref": null,
+                      "rendered": "My Movies",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {
@@ -1033,12 +1195,22 @@ ShallowWrapper {
               className="menu-items"
             >
               <li
-                className="active"
+                className=""
               >
-                Top Rated
+                <Link
+                  to="/"
+                >
+                  Top Rated
+                </Link>
               </li>
-              <li>
-                Movies
+              <li
+                className=""
+              >
+                <Link
+                  to="/mymovies"
+                >
+                  My Movies
+                </Link>
               </li>
               <li>
                 Discover
@@ -1104,12 +1276,22 @@ ShallowWrapper {
               className="menu-items"
             >
               <li
-                className="active"
+                className=""
               >
-                Top Rated
+                <Link
+                  to="/"
+                >
+                  Top Rated
+                </Link>
               </li>
-              <li>
-                Movies
+              <li
+                className=""
+              >
+                <Link
+                  to="/mymovies"
+                >
+                  My Movies
+                </Link>
               </li>
               <li>
                 Discover
@@ -1172,12 +1354,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -1308,12 +1500,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -1329,12 +1531,22 @@ ShallowWrapper {
               "props": Object {
                 "children": Array [
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>,
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>,
                   <li>
                     Discover
@@ -1349,11 +1561,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Top Rated",
-                    "className": "active",
+                    "children": <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>,
+                    "className": "",
                   },
                   "ref": null,
-                  "rendered": "Top Rated",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Top Rated",
+                      "to": "/",
+                    },
+                    "ref": null,
+                    "rendered": "Top Rated",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -1361,10 +1588,26 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "host",
                   "props": Object {
-                    "children": "Movies",
+                    "children": <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>,
+                    "className": "",
                   },
                   "ref": null,
-                  "rendered": "Movies",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "My Movies",
+                      "to": "/mymovies",
+                    },
+                    "ref": null,
+                    "rendered": "My Movies",
+                    "type": [Function],
+                  },
                   "type": "li",
                 },
                 Object {
@@ -1502,12 +1745,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -1573,12 +1826,22 @@ ShallowWrapper {
                 className="menu-items"
               >
                 <li
-                  className="active"
+                  className=""
                 >
-                  Top Rated
+                  <Link
+                    to="/"
+                  >
+                    Top Rated
+                  </Link>
                 </li>
-                <li>
-                  Movies
+                <li
+                  className=""
+                >
+                  <Link
+                    to="/mymovies"
+                  >
+                    My Movies
+                  </Link>
                 </li>
                 <li>
                   Discover
@@ -1641,12 +1904,22 @@ ShallowWrapper {
                   className="menu-items"
                 >
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>
                   <li>
                     Discover
@@ -1777,12 +2050,22 @@ ShallowWrapper {
                   className="menu-items"
                 >
                   <li
-                    className="active"
+                    className=""
                   >
-                    Top Rated
+                    <Link
+                      to="/"
+                    >
+                      Top Rated
+                    </Link>
                   </li>
-                  <li>
-                    Movies
+                  <li
+                    className=""
+                  >
+                    <Link
+                      to="/mymovies"
+                    >
+                      My Movies
+                    </Link>
                   </li>
                   <li>
                     Discover
@@ -1798,12 +2081,22 @@ ShallowWrapper {
                 "props": Object {
                   "children": Array [
                     <li
-                      className="active"
+                      className=""
                     >
-                      Top Rated
+                      <Link
+                        to="/"
+                      >
+                        Top Rated
+                      </Link>
                     </li>,
-                    <li>
-                      Movies
+                    <li
+                      className=""
+                    >
+                      <Link
+                        to="/mymovies"
+                      >
+                        My Movies
+                      </Link>
                     </li>,
                     <li>
                       Discover
@@ -1818,11 +2111,26 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Top Rated",
-                      "className": "active",
+                      "children": <Link
+                        to="/"
+                      >
+                        Top Rated
+                      </Link>,
+                      "className": "",
                     },
                     "ref": null,
-                    "rendered": "Top Rated",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Top Rated",
+                        "to": "/",
+                      },
+                      "ref": null,
+                      "rendered": "Top Rated",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {
@@ -1830,10 +2138,26 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "host",
                     "props": Object {
-                      "children": "Movies",
+                      "children": <Link
+                        to="/mymovies"
+                      >
+                        My Movies
+                      </Link>,
+                      "className": "",
                     },
                     "ref": null,
-                    "rendered": "Movies",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "My Movies",
+                        "to": "/mymovies",
+                      },
+                      "ref": null,
+                      "rendered": "My Movies",
+                      "type": [Function],
+                    },
                     "type": "li",
                   },
                   Object {

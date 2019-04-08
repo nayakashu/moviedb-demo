@@ -3,7 +3,12 @@ import { shallow } from 'enzyme';
 import { TopMovies } from './TopMovies';
 
 describe('TopMovies', () => {
-  const topMovies = shallow(<TopMovies />);
+  const props = {
+    closeLeftNav: () => {},
+    setActivePage: () => {}
+  };
+
+  const topMovies = shallow(<TopMovies {...props} />);
 
   it('renders correctly', () => {
     expect(topMovies).toMatchSnapshot();

@@ -28,20 +28,28 @@ ShallowWrapper {
           className="left-nav-menu"
         >
           <li>
-            <i
-              className="material-icons"
+            <Link
+              to="/"
             >
-              movie
-            </i>
-            Top Movies
+              <i
+                className="material-icons"
+              >
+                movie
+              </i>
+              Top Movies
+            </Link>
           </li>
           <li>
-            <i
-              className="material-icons"
+            <Link
+              to="/mymovies"
             >
-              person
-            </i>
-             My Movies
+              <i
+                className="material-icons"
+              >
+                person
+              </i>
+               My Movies
+            </Link>
           </li>
           <li>
             <i
@@ -77,20 +85,28 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <li>
-              <i
-                className="material-icons"
+              <Link
+                to="/"
               >
-                movie
-              </i>
-              Top Movies
+                <i
+                  className="material-icons"
+                >
+                  movie
+                </i>
+                Top Movies
+              </Link>
             </li>,
             <li>
-              <i
-                className="material-icons"
+              <Link
+                to="/mymovies"
               >
-                person
-              </i>
-               My Movies
+                <i
+                  className="material-icons"
+                >
+                  person
+                </i>
+                 My Movies
+              </Link>
             </li>,
             <li>
               <i
@@ -110,31 +126,51 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
+              "children": <Link
+                to="/"
+              >
                 <i
                   className="material-icons"
                 >
                   movie
-                </i>,
-                "Top Movies",
-              ],
+                </i>
+                Top Movies
+              </Link>,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "movie",
-                  "className": "material-icons",
-                },
-                "ref": null,
-                "rendered": "movie",
-                "type": "i",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="material-icons"
+                  >
+                    movie
+                  </i>,
+                  "Top Movies",
+                ],
+                "to": "/",
               },
-              "Top Movies",
-            ],
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "movie",
+                    "className": "material-icons",
+                  },
+                  "ref": null,
+                  "rendered": "movie",
+                  "type": "i",
+                },
+                "Top Movies",
+              ],
+              "type": [Function],
+            },
             "type": "li",
           },
           Object {
@@ -142,31 +178,51 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": Array [
+              "children": <Link
+                to="/mymovies"
+              >
                 <i
                   className="material-icons"
                 >
                   person
-                </i>,
-                " My Movies",
-              ],
+                </i>
+                 My Movies
+              </Link>,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {
-                  "children": "person",
-                  "className": "material-icons",
-                },
-                "ref": null,
-                "rendered": "person",
-                "type": "i",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="material-icons"
+                  >
+                    person
+                  </i>,
+                  " My Movies",
+                ],
+                "to": "/mymovies",
               },
-              " My Movies",
-            ],
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "person",
+                    "className": "material-icons",
+                  },
+                  "ref": null,
+                  "rendered": "person",
+                  "type": "i",
+                },
+                " My Movies",
+              ],
+              "type": [Function],
+            },
             "type": "li",
           },
           Object {
@@ -223,20 +279,28 @@ ShallowWrapper {
             className="left-nav-menu"
           >
             <li>
-              <i
-                className="material-icons"
+              <Link
+                to="/"
               >
-                movie
-              </i>
-              Top Movies
+                <i
+                  className="material-icons"
+                >
+                  movie
+                </i>
+                Top Movies
+              </Link>
             </li>
             <li>
-              <i
-                className="material-icons"
+              <Link
+                to="/mymovies"
               >
-                person
-              </i>
-               My Movies
+                <i
+                  className="material-icons"
+                >
+                  person
+                </i>
+                 My Movies
+              </Link>
             </li>
             <li>
               <i
@@ -272,20 +336,28 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <li>
-                <i
-                  className="material-icons"
+                <Link
+                  to="/"
                 >
-                  movie
-                </i>
-                Top Movies
+                  <i
+                    className="material-icons"
+                  >
+                    movie
+                  </i>
+                  Top Movies
+                </Link>
               </li>,
               <li>
-                <i
-                  className="material-icons"
+                <Link
+                  to="/mymovies"
                 >
-                  person
-                </i>
-                 My Movies
+                  <i
+                    className="material-icons"
+                  >
+                    person
+                  </i>
+                   My Movies
+                </Link>
               </li>,
               <li>
                 <i
@@ -305,31 +377,51 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
+                "children": <Link
+                  to="/"
+                >
                   <i
                     className="material-icons"
                   >
                     movie
-                  </i>,
-                  "Top Movies",
-                ],
+                  </i>
+                  Top Movies
+                </Link>,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "movie",
-                    "className": "material-icons",
-                  },
-                  "ref": null,
-                  "rendered": "movie",
-                  "type": "i",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="material-icons"
+                    >
+                      movie
+                    </i>,
+                    "Top Movies",
+                  ],
+                  "to": "/",
                 },
-                "Top Movies",
-              ],
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "movie",
+                      "className": "material-icons",
+                    },
+                    "ref": null,
+                    "rendered": "movie",
+                    "type": "i",
+                  },
+                  "Top Movies",
+                ],
+                "type": [Function],
+              },
               "type": "li",
             },
             Object {
@@ -337,31 +429,51 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": Array [
+                "children": <Link
+                  to="/mymovies"
+                >
                   <i
                     className="material-icons"
                   >
                     person
-                  </i>,
-                  " My Movies",
-                ],
+                  </i>
+                   My Movies
+                </Link>,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "host",
-                  "props": Object {
-                    "children": "person",
-                    "className": "material-icons",
-                  },
-                  "ref": null,
-                  "rendered": "person",
-                  "type": "i",
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="material-icons"
+                    >
+                      person
+                    </i>,
+                    " My Movies",
+                  ],
+                  "to": "/mymovies",
                 },
-                " My Movies",
-              ],
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "person",
+                      "className": "material-icons",
+                    },
+                    "ref": null,
+                    "rendered": "person",
+                    "type": "i",
+                  },
+                  " My Movies",
+                ],
+                "type": [Function],
+              },
               "type": "li",
             },
             Object {
