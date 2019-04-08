@@ -53,4 +53,23 @@
     top: 25px;
     cursor: pointer;
   }
+
+  .forgot-pass-legend {
+    margin-top: 15px;
+    font-size: 14px;
+    color: $content-text-color;
+    a {
+      color: $button-blue;
+      &:hover {
+        text-decoration: none;
+        color: $button-blue;
+      }
+    }
+
+    .recover-pass {
+      color: $content-text-color;
+      float: right;
+      cursor: pointer;
+    }
+  }
 }

@@ -1,8 +1,19 @@
 @import '../../Common.scss';
 
-.top-rated-movies {
-  h3 {
-    margin-top: 30px;
-    color: $text-color-light;
-  }
+.login-tran-enter {
+  opacity: 0.01;
+}
+
+.login-tran-enter.login-tran-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.login-tran-leave {
+  opacity: 1;
+}
+
+.login-tran-leave.login-tran-leave-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
 }

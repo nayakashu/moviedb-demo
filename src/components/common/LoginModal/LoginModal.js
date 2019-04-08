@@ -25,6 +25,12 @@ export class LoginModal extends Component {
           <input type="password" placeholder="Password" />
           <button className="btn-login">Login</button>
         </form>
+        <div className="forgot-pass-legend">
+          <span className="signup-link">
+            Don't have an account? <a href="/#/">Sign up</a>
+          </span>
+          <span className="recover-pass">Recover password</span>
+        </div>
       </div>
     );
   }
