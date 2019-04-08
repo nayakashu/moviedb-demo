@@ -3,7 +3,7 @@
 exports[`Notification renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Notification />,
+  Symbol(enzyme.__unrendered__): <Connect(Notification) />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,151 +16,59 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "host",
+    "nodeType": "function",
     "props": Object {
-      "children": Array [
-        <div
-          className="notif-message"
-        >
-          <i
-            className="material-icons icon-notif"
-          >
-            notifications
-          </i>
-          Bomb lagdi menu
-        </div>,
-        <i
-          className="material-icons btn-close"
-        >
-          close
-        </i>,
-      ],
-      "className": "notif-container",
+      "children": [Function],
     },
     "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <i
-              className="material-icons icon-notif"
-            >
-              notifications
-            </i>,
-            "Bomb lagdi menu",
-          ],
-          "className": "notif-message",
+    "rendered": [Function],
+    "type": Object {
+      "$$typeof": Symbol(react.context),
+      "_calculateChangedBits": null,
+      "_context": Object {
+        "$$typeof": Symbol(react.context),
+        "Consumer": [Circular],
+        "Provider": Object {
+          "$$typeof": Symbol(react.provider),
+          "_context": [Circular],
         },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "notifications",
-              "className": "material-icons icon-notif",
-            },
-            "ref": null,
-            "rendered": "notifications",
-            "type": "i",
-          },
-          "Bomb lagdi menu",
-        ],
-        "type": "div",
+        "_calculateChangedBits": null,
+        "_currentRenderer": null,
+        "_currentRenderer2": null,
+        "_currentValue": null,
+        "_currentValue2": null,
+        "_threadCount": 0,
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "close",
-          "className": "material-icons btn-close",
-        },
-        "ref": null,
-        "rendered": "close",
-        "type": "i",
-      },
-    ],
-    "type": "div",
+    },
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "host",
+      "nodeType": "function",
       "props": Object {
-        "children": Array [
-          <div
-            className="notif-message"
-          >
-            <i
-              className="material-icons icon-notif"
-            >
-              notifications
-            </i>
-            Bomb lagdi menu
-          </div>,
-          <i
-            className="material-icons btn-close"
-          >
-            close
-          </i>,
-        ],
-        "className": "notif-container",
+        "children": [Function],
       },
       "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <i
-                className="material-icons icon-notif"
-              >
-                notifications
-              </i>,
-              "Bomb lagdi menu",
-            ],
-            "className": "notif-message",
+      "rendered": [Function],
+      "type": Object {
+        "$$typeof": Symbol(react.context),
+        "_calculateChangedBits": null,
+        "_context": Object {
+          "$$typeof": Symbol(react.context),
+          "Consumer": [Circular],
+          "Provider": Object {
+            "$$typeof": Symbol(react.provider),
+            "_context": [Circular],
           },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "notifications",
-                "className": "material-icons icon-notif",
-              },
-              "ref": null,
-              "rendered": "notifications",
-              "type": "i",
-            },
-            "Bomb lagdi menu",
-          ],
-          "type": "div",
+          "_calculateChangedBits": null,
+          "_currentRenderer": null,
+          "_currentRenderer2": null,
+          "_currentValue": null,
+          "_currentValue2": null,
+          "_threadCount": 0,
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "close",
-            "className": "material-icons btn-close",
-          },
-          "ref": null,
-          "rendered": "close",
-          "type": "i",
-        },
-      ],
-      "type": "div",
+      },
     },
   ],
   Symbol(enzyme.__options__): Object {
