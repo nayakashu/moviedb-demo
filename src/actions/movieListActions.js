@@ -1,9 +1,4 @@
-import {
-  FETCH_TOP_MOVIES,
-  FETCH_USER_MOVIES,
-  ADD_NEW_MOVIE,
-  DELETE_MOVIE
-} from './types';
+import { FETCH_TOP_MOVIES, FETCH_USER_MOVIES } from './types';
 import axios from 'axios';
 import { ENDPOINT_URLS, USER_MOVIES_LS_KEY } from '../appConfig';
 
@@ -62,11 +57,13 @@ export const addNewMovie = movieId => dispatch => {
 
     let moviesListArr = JSON.parse(moviesList);
 
-    // Add new movie
-    moviesListArr.push(movieId);
+    // Add new movie if not already present
+    if (moviesListArr.indexOf(movieId) < 0) {
+      moviesListArr.push(movieId);
 
-    // Save new list in localstorage
-    localStorage.setItem(USER_MOVIES_LS_KEY, JSON.stringify(moviesListArr));
+      // Save new list in localstorage
+      localStorage.setItem(USER_MOVIES_LS_KEY, JSON.stringify(moviesListArr));
+    }
 
     getMovieDetails(moviesListArr).then(responses => {
       return dispatch({

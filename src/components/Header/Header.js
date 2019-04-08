@@ -49,16 +49,22 @@ export class Header extends Component {
             </div>
             <div className="col-sm-6">
               <ul className="menu-items">
-                <li className={this.props.activePage === '#/' ? 'active' : ''}>
-                  <Link to="/">Top Rated</Link>
-                </li>
-                <li
-                  className={
-                    this.props.activePage === '#/mymovies' ? 'active' : ''
-                  }
-                >
-                  <Link to="/mymovies">My Movies</Link>
-                </li>
+                <Link to="/">
+                  <li
+                    className={this.props.activePage === '#/' ? 'active' : ''}
+                  >
+                    Top Rated
+                  </li>
+                </Link>
+                <Link to="/mymovies">
+                  <li
+                    className={
+                      this.props.activePage === '#/mymovies' ? 'active' : ''
+                    }
+                  >
+                    My Movies
+                  </li>
+                </Link>
                 <li>Discover</li>
               </ul>
             </div>

@@ -44,6 +44,13 @@ ul.menu-items {
   top: 9px;
   margin-bottom: 9px;
 
+  a {
+    color: inherit;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   li {
     font-size: 18px;
     display: inline-block;
@@ -55,12 +62,6 @@ ul.menu-items {
     &:hover {
       border-bottom: 5px solid $button-blue;
       transition: 0.3s;
-    }
-    a {
-      color: inherit;
-      &:hover {
-        text-decoration: none;
-      }
     }
   }
 

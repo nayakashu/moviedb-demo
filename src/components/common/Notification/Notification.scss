@@ -3,12 +3,13 @@
 .notif-container {
   border: none;
   width: 550px;
-  position: absolute;
+  position: fixed;
   top: 114px;
-  right: 14px;
+  right: 100px;
   color: $white;
   font-size: 15px;
   padding: 15px 20px 20px 20px;
+  box-shadow: 2px 2px 5px $shadow-color;
 
   i.icon-notif {
     font-size: 20px;

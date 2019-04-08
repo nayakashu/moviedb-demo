@@ -2,12 +2,16 @@ import {
   OPEN_LOGIN_FORM,
   CLOSE_LOGIN_FORM,
   OPEN_ADD_MOVIE,
-  CLOSE_ADD_MOVIE
+  CLOSE_ADD_MOVIE,
+  SHOW_NOTIFICATION,
+  HIDE_NOTIFICATION
 } from '../actions/types';
 
 const initialState = {
   loginModalOpen: false,
-  addMovieModalOpen: false
+  addMovieModalOpen: false,
+  modalType: null,
+  modalMessge: null
 };
 
 export default function(state = initialState, action) {
@@ -38,6 +42,22 @@ export default function(state = initialState, action) {
       return {
         ...state,
         addMovieModalOpen: false
+      };
+
+    // Show notification
+    case SHOW_NOTIFICATION:
+      return {
+        ...state,
+        modalMessage: action.payload.message,
+        modalType: action.payload.type
+      };
+
+    // Hide notification
+    case HIDE_NOTIFICATION:
+      return {
+        ...state,
+        modalMessage: null,
+        modalType: null
       };
 
     default:

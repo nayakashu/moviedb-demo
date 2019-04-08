@@ -9,6 +9,8 @@ export const OPEN_LOGIN_FORM = 'OPEN_LOGIN_FORM';
 export const OPEN_ADD_MOVIE = 'OPEN_ADD_MOVIE';
 export const CLOSE_LOGIN_FORM = 'CLOSE_LOGIN_FORM';
 export const CLOSE_ADD_MOVIE = 'CLOSE_ADD_MOVIE';
+export const SHOW_NOTIFICATION = 'SHOW_NOTIFICATION';
+export const HIDE_NOTIFICATION = 'HIDE_NOTIFICATION';
 
 // Left nav menu actions
 export const OPEN_LEFT_NAV = 'OPEN_LEFT_NAV';

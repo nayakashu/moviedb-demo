@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
 import './MovieTile.scss';
 import PropTypes from 'prop-types';
-import { POSTER_BASE_URL } from '../../../appConfig';
+import { addNewMovie, deleteMovie } from '../../../actions/movieListActions';
+import { showNotification } from '../../../actions/modalActions';
+import { POSTER_BASE_URL, NOTIF_TYPES } from '../../../appConfig';
 
 export class MovieTile extends Component {
   sliceDesc(desc, sliceLength = 85) {
@@ -10,6 +13,22 @@ export class MovieTile extends Component {
     }
     return desc;
   }
+
+  addMovieToList = movieId => {
+    this.props.addNewMovie(movieId);
+    this.props.showNotification(
+      'Movie was added successfully',
+      NOTIF_TYPES.SUCCESS
+    );
+  };
+
+  deleteMovie = movieId => {
+    this.props.deleteMovie(movieId);
+    this.props.showNotification(
+      'Movie was deleted successfully',
+      NOTIF_TYPES.DANGER
+    );
+  };
 
   render() {
     const movieDetails = this.props.movieDetails;
@@ -22,9 +41,19 @@ export class MovieTile extends Component {
         </span>
 
         {this.props.editable ? (
-          <i className="material-icons ellipsis">close</i>
+          <i
+            className="material-icons ellipsis"
+            onClick={() => this.deleteMovie(movieDetails.id)}
+          >
+            close
+          </i>
         ) : (
-          <i className="material-icons btn-like">favorite_border</i>
+          <i
+            className="material-icons btn-like"
+            onClick={() => this.addMovieToList(movieDetails.id)}
+          >
+            favorite_border
+          </i>
         )}
 
         <img
@@ -48,4 +77,7 @@ MovieTile.propTypes = {
   editable: PropTypes.any
 };
 
-export default MovieTile;
+export default connect(
+  null,
+  { addNewMovie, deleteMovie, showNotification }
+)(MovieTile);
