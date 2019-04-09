@@ -2,7 +2,7 @@
   "name": "moviedb-demo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://github.com/routbisu/moviedb-demo",
+  "homepage": "https://routbisu.github.io/moviedb-demo/",
   "dependencies": {
     "@material-ui/icons": "^3.0.2",
     "axios": "^0.18.0",

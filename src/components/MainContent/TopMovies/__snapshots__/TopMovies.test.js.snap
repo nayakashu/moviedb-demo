@@ -6,6 +6,16 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <TopMovies
     closeLeftNav={[Function]}
     setActivePage={[Function]}
+    topMovies={
+      Array [
+        Object {
+          "id": 1,
+        },
+        Object {
+          "id": 2,
+        },
+      ]
+    }
   />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
@@ -25,10 +35,35 @@ ShallowWrapper {
         <h3>
           Top Rated Movies
         </h3>,
-        <Loader />,
+        null,
         <div
           className="row"
-        />,
+        >
+          <div
+            className="col-sm-4 col-xs-6"
+          >
+            <Connect(MovieTile)
+              isAdded={false}
+              movieDetails={
+                Object {
+                  "id": 1,
+                }
+              }
+            />
+          </div>
+          <div
+            className="col-sm-4 col-xs-6"
+          >
+            <Connect(MovieTile)
+              isAdded={false}
+              movieDetails={
+                Object {
+                  "id": 2,
+                }
+              }
+            />
+          </div>
+        </div>,
       ],
       "className": "top-rated-movies",
     },
@@ -45,25 +80,107 @@ ShallowWrapper {
         "rendered": "Top Rated Movies",
         "type": "h3",
       },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "function",
-        "props": Object {},
-        "ref": null,
-        "rendered": null,
-        "type": [Function],
-      },
+      null,
       Object {
         "instance": null,
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "children": undefined,
+          "children": Array [
+            <div
+              className="col-sm-4 col-xs-6"
+            >
+              <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 1,
+                  }
+                }
+              />
+            </div>,
+            <div
+              className="col-sm-4 col-xs-6"
+            >
+              <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 2,
+                  }
+                }
+              />
+            </div>,
+          ],
           "className": "row",
         },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": "1",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 1,
+                  }
+                }
+              />,
+              "className": "col-sm-4 col-xs-6",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "isAdded": false,
+                "movieDetails": Object {
+                  "id": 1,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": "2",
+            "nodeType": "host",
+            "props": Object {
+              "children": <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 2,
+                  }
+                }
+              />,
+              "className": "col-sm-4 col-xs-6",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "isAdded": false,
+                "movieDetails": Object {
+                  "id": 2,
+                },
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+            "type": "div",
+          },
+        ],
         "type": "div",
       },
     ],
@@ -79,10 +196,35 @@ ShallowWrapper {
           <h3>
             Top Rated Movies
           </h3>,
-          <Loader />,
+          null,
           <div
             className="row"
-          />,
+          >
+            <div
+              className="col-sm-4 col-xs-6"
+            >
+              <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 1,
+                  }
+                }
+              />
+            </div>
+            <div
+              className="col-sm-4 col-xs-6"
+            >
+              <Connect(MovieTile)
+                isAdded={false}
+                movieDetails={
+                  Object {
+                    "id": 2,
+                  }
+                }
+              />
+            </div>
+          </div>,
         ],
         "className": "top-rated-movies",
       },
@@ -99,25 +241,107 @@ ShallowWrapper {
           "rendered": "Top Rated Movies",
           "type": "h3",
         },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "function",
-          "props": Object {},
-          "ref": null,
-          "rendered": null,
-          "type": [Function],
-        },
+        null,
         Object {
           "instance": null,
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "children": undefined,
+            "children": Array [
+              <div
+                className="col-sm-4 col-xs-6"
+              >
+                <Connect(MovieTile)
+                  isAdded={false}
+                  movieDetails={
+                    Object {
+                      "id": 1,
+                    }
+                  }
+                />
+              </div>,
+              <div
+                className="col-sm-4 col-xs-6"
+              >
+                <Connect(MovieTile)
+                  isAdded={false}
+                  movieDetails={
+                    Object {
+                      "id": 2,
+                    }
+                  }
+                />
+              </div>,
+            ],
             "className": "row",
           },
           "ref": null,
-          "rendered": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": "1",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(MovieTile)
+                  isAdded={false}
+                  movieDetails={
+                    Object {
+                      "id": 1,
+                    }
+                  }
+                />,
+                "className": "col-sm-4 col-xs-6",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "isAdded": false,
+                  "movieDetails": Object {
+                    "id": 1,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": "2",
+              "nodeType": "host",
+              "props": Object {
+                "children": <Connect(MovieTile)
+                  isAdded={false}
+                  movieDetails={
+                    Object {
+                      "id": 2,
+                    }
+                  }
+                />,
+                "className": "col-sm-4 col-xs-6",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "isAdded": false,
+                  "movieDetails": Object {
+                    "id": 2,
+                  },
+                },
+                "ref": null,
+                "rendered": null,
+                "type": [Function],
+              },
+              "type": "div",
+            },
+          ],
           "type": "div",
         },
       ],

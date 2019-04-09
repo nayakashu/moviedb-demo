@@ -1,9 +1,129 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`MainContent renders correctly - movie with no details 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieTile />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): null,
+  Symbol(enzyme.__nodes__): Array [
+    null,
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
 exports[`MainContent renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(MovieTile) />,
+  Symbol(enzyme.__unrendered__): <MovieTile
+    addNewMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    deleteMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    movieDetails={
+      Object {
+        "title": "Short Title",
+      }
+    }
+    showNotification={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "Movie was added successfully",
+            "success",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,59 +136,325 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <span
+          className="popularity"
+        >
+          NaN
+          %
+          <span
+            className="bottom-border"
+          />
+        </span>,
+        <i
+          className="material-icons btn-like"
+          onClick={[Function]}
+        >
+          favorite_border
+        </i>,
+        <img
+          alt="Short Title"
+          src="https://image.tmdb.org/t/p/w500/undefined"
+        />,
+        <div
+          className="movie-details"
+        >
+          <h4>
+            Short Title
+          </h4>
+          <div
+            className="release-date"
+          />
+          <div
+            className="description"
+          />
+        </div>,
+      ],
+      "className": "movie-tile",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            NaN,
+            "%",
+            <span
+              className="bottom-border"
+            />,
+          ],
+          "className": "popularity",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": Array [
+          NaN,
+          "%",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "bottom-border",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "span",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite_border",
+          "className": "material-icons btn-like",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite_border",
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "Short Title",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              Short Title
+            </h4>,
+            <div
+              className="release-date"
+            />,
+            <div
+              className="description"
+            />,
+          ],
+          "className": "movie-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Short Title",
+            },
+            "ref": null,
+            "rendered": "Short Title",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "release-date",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <span
+            className="popularity"
+          >
+            NaN
+            %
+            <span
+              className="bottom-border"
+            />
+          </span>,
+          <i
+            className="material-icons btn-like"
+            onClick={[Function]}
+          >
+            favorite_border
+          </i>,
+          <img
+            alt="Short Title"
+            src="https://image.tmdb.org/t/p/w500/undefined"
+          />,
+          <div
+            className="movie-details"
+          >
+            <h4>
+              Short Title
+            </h4>
+            <div
+              className="release-date"
+            />
+            <div
+              className="description"
+            />
+          </div>,
+        ],
+        "className": "movie-tile",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              NaN,
+              "%",
+              <span
+                className="bottom-border"
+              />,
+            ],
+            "className": "popularity",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": Array [
+            NaN,
+            "%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "bottom-border",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "span",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite_border",
+            "className": "material-icons btn-like",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite_border",
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "Short Title",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                Short Title
+              </h4>,
+              <div
+                className="release-date"
+              />,
+              <div
+                className="description"
+              />,
+            ],
+            "className": "movie-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Short Title",
+              },
+              "ref": null,
+              "rendered": "Short Title",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "release-date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -102,10 +488,10 @@ ShallowWrapper {
 exports[`MainContent renders correctly 2`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(MovieTile)
+  Symbol(enzyme.__unrendered__): <MovieTile
     movieDetails={
       Object {
-        "title": "Short Title",
+        "title": "This is a very very very long Title to test slicing function",
       }
     }
   />,
@@ -121,59 +507,325 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <span
+          className="popularity"
+        >
+          NaN
+          %
+          <span
+            className="bottom-border"
+          />
+        </span>,
+        <i
+          className="material-icons btn-like"
+          onClick={[Function]}
+        >
+          favorite_border
+        </i>,
+        <img
+          alt="This is a very very very long Title to test slicing function"
+          src="https://image.tmdb.org/t/p/w500/undefined"
+        />,
+        <div
+          className="movie-details"
+        >
+          <h4>
+            This is a very very very long  ...
+          </h4>
+          <div
+            className="release-date"
+          />
+          <div
+            className="description"
+          />
+        </div>,
+      ],
+      "className": "movie-tile",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            NaN,
+            "%",
+            <span
+              className="bottom-border"
+            />,
+          ],
+          "className": "popularity",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": Array [
+          NaN,
+          "%",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "bottom-border",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "span",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite_border",
+          "className": "material-icons btn-like",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite_border",
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "This is a very very very long Title to test slicing function",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              This is a very very very long  ...
+            </h4>,
+            <div
+              className="release-date"
+            />,
+            <div
+              className="description"
+            />,
+          ],
+          "className": "movie-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This is a very very very long  ...",
+            },
+            "ref": null,
+            "rendered": "This is a very very very long  ...",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "release-date",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <span
+            className="popularity"
+          >
+            NaN
+            %
+            <span
+              className="bottom-border"
+            />
+          </span>,
+          <i
+            className="material-icons btn-like"
+            onClick={[Function]}
+          >
+            favorite_border
+          </i>,
+          <img
+            alt="This is a very very very long Title to test slicing function"
+            src="https://image.tmdb.org/t/p/w500/undefined"
+          />,
+          <div
+            className="movie-details"
+          >
+            <h4>
+              This is a very very very long  ...
+            </h4>
+            <div
+              className="release-date"
+            />
+            <div
+              className="description"
+            />
+          </div>,
+        ],
+        "className": "movie-tile",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              NaN,
+              "%",
+              <span
+                className="bottom-border"
+              />,
+            ],
+            "className": "popularity",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": Array [
+            NaN,
+            "%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "bottom-border",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "span",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite_border",
+            "className": "material-icons btn-like",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite_border",
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "This is a very very very long Title to test slicing function",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                This is a very very very long  ...
+              </h4>,
+              <div
+                className="release-date"
+              />,
+              <div
+                className="description"
+              />,
+            ],
+            "className": "movie-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This is a very very very long  ...",
+              },
+              "ref": null,
+              "rendered": "This is a very very very long  ...",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "release-date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
@@ -207,10 +859,80 @@ ShallowWrapper {
 exports[`MainContent renders correctly 3`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(MovieTile)
+  Symbol(enzyme.__unrendered__): <MovieTile
+    addNewMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    deleteMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    editable={true}
     movieDetails={
       Object {
         "title": "This is a very very very long Title to test slicing function",
+      }
+    }
+    showNotification={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "Movie was added successfully",
+            "success",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
       }
     }
   />,
@@ -226,59 +948,766 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <span
+          className="popularity"
+        >
+          NaN
+          %
+          <span
+            className="bottom-border"
+          />
+        </span>,
+        <i
+          className="material-icons ellipsis"
+          onClick={[Function]}
+        >
+          close
+        </i>,
+        <img
+          alt="This is a very very very long Title to test slicing function"
+          src="https://image.tmdb.org/t/p/w500/undefined"
+        />,
+        <div
+          className="movie-details"
+        >
+          <h4>
+            This is a very very very long  ...
+          </h4>
+          <div
+            className="release-date"
+          />
+          <div
+            className="description"
+          />
+        </div>,
+      ],
+      "className": "movie-tile",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            NaN,
+            "%",
+            <span
+              className="bottom-border"
+            />,
+          ],
+          "className": "popularity",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": Array [
+          NaN,
+          "%",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "bottom-border",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "span",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "close",
+          "className": "material-icons ellipsis",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "close",
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "This is a very very very long Title to test slicing function",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              This is a very very very long  ...
+            </h4>,
+            <div
+              className="release-date"
+            />,
+            <div
+              className="description"
+            />,
+          ],
+          "className": "movie-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This is a very very very long  ...",
+            },
+            "ref": null,
+            "rendered": "This is a very very very long  ...",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "release-date",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <span
+            className="popularity"
+          >
+            NaN
+            %
+            <span
+              className="bottom-border"
+            />
+          </span>,
+          <i
+            className="material-icons ellipsis"
+            onClick={[Function]}
+          >
+            close
+          </i>,
+          <img
+            alt="This is a very very very long Title to test slicing function"
+            src="https://image.tmdb.org/t/p/w500/undefined"
+          />,
+          <div
+            className="movie-details"
+          >
+            <h4>
+              This is a very very very long  ...
+            </h4>
+            <div
+              className="release-date"
+            />
+            <div
+              className="description"
+            />
+          </div>,
+        ],
+        "className": "movie-tile",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              NaN,
+              "%",
+              <span
+                className="bottom-border"
+              />,
+            ],
+            "className": "popularity",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": Array [
+            NaN,
+            "%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "bottom-border",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "close",
+            "className": "material-icons ellipsis",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "close",
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "This is a very very very long Title to test slicing function",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                This is a very very very long  ...
+              </h4>,
+              <div
+                className="release-date"
+              />,
+              <div
+                className="description"
+              />,
+            ],
+            "className": "movie-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This is a very very very long  ...",
+              },
+              "ref": null,
+              "rendered": "This is a very very very long  ...",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "release-date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
         },
       },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
+exports[`MainContent renders correctly 4`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <MovieTile
+    addNewMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    deleteMovie={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            undefined,
+          ],
+          Array [
+            undefined,
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    isAdded={true}
+    movieDetails={
+      Object {
+        "title": "This is a very very very long Title to test slicing function",
+      }
+    }
+    showNotification={
+      [MockFunction] {
+        "calls": Array [
+          Array [
+            "Movie was added successfully",
+            "success",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+          Array [
+            "Movie was deleted successfully",
+            "danger",
+          ],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <span
+          className="popularity"
+        >
+          NaN
+          %
+          <span
+            className="bottom-border"
+          />
+        </span>,
+        <i
+          className="material-icons btn-like"
+          onClick={[Function]}
+        >
+          favorite
+        </i>,
+        <img
+          alt="This is a very very very long Title to test slicing function"
+          src="https://image.tmdb.org/t/p/w500/undefined"
+        />,
+        <div
+          className="movie-details"
+        >
+          <h4>
+            This is a very very very long  ...
+          </h4>
+          <div
+            className="release-date"
+          />
+          <div
+            className="description"
+          />
+        </div>,
+      ],
+      "className": "movie-tile",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            NaN,
+            "%",
+            <span
+              className="bottom-border"
+            />,
+          ],
+          "className": "popularity",
+        },
+        "ref": null,
+        "rendered": Array [
+          NaN,
+          "%",
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "bottom-border",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "span",
+          },
+        ],
+        "type": "span",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "favorite",
+          "className": "material-icons btn-like",
+          "onClick": [Function],
+        },
+        "ref": null,
+        "rendered": "favorite",
+        "type": "i",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "alt": "This is a very very very long Title to test slicing function",
+          "src": "https://image.tmdb.org/t/p/w500/undefined",
+        },
+        "ref": null,
+        "rendered": null,
+        "type": "img",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h4>
+              This is a very very very long  ...
+            </h4>,
+            <div
+              className="release-date"
+            />,
+            <div
+              className="description"
+            />,
+          ],
+          "className": "movie-details",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "This is a very very very long  ...",
+            },
+            "ref": null,
+            "rendered": "This is a very very very long  ...",
+            "type": "h4",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "release-date",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": undefined,
+              "className": "description",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <span
+            className="popularity"
+          >
+            NaN
+            %
+            <span
+              className="bottom-border"
+            />
+          </span>,
+          <i
+            className="material-icons btn-like"
+            onClick={[Function]}
+          >
+            favorite
+          </i>,
+          <img
+            alt="This is a very very very long Title to test slicing function"
+            src="https://image.tmdb.org/t/p/w500/undefined"
+          />,
+          <div
+            className="movie-details"
+          >
+            <h4>
+              This is a very very very long  ...
+            </h4>
+            <div
+              className="release-date"
+            />
+            <div
+              className="description"
+            />
+          </div>,
+        ],
+        "className": "movie-tile",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              NaN,
+              "%",
+              <span
+                className="bottom-border"
+              />,
+            ],
+            "className": "popularity",
+          },
+          "ref": null,
+          "rendered": Array [
+            NaN,
+            "%",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "bottom-border",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "span",
+            },
+          ],
+          "type": "span",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "favorite",
+            "className": "material-icons btn-like",
+            "onClick": [Function],
+          },
+          "ref": null,
+          "rendered": "favorite",
+          "type": "i",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "alt": "This is a very very very long Title to test slicing function",
+            "src": "https://image.tmdb.org/t/p/w500/undefined",
+          },
+          "ref": null,
+          "rendered": null,
+          "type": "img",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h4>
+                This is a very very very long  ...
+              </h4>,
+              <div
+                className="release-date"
+              />,
+              <div
+                className="description"
+              />,
+            ],
+            "className": "movie-details",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "This is a very very very long  ...",
+              },
+              "ref": null,
+              "rendered": "This is a very very very long  ...",
+              "type": "h4",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "release-date",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": undefined,
+                "className": "description",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

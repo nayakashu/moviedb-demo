@@ -1,6 +1,6 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import MovieTile from './MovieTile';
+import { MovieTile } from './MovieTile';
 
 describe('MainContent', () => {
   const movieDetailsShort = { title: 'Short Title' };
@@ -9,10 +9,21 @@ describe('MainContent', () => {
   };
 
   const movieTileNoDetails = shallow(<MovieTile />);
-  const movieTile = shallow(<MovieTile movieDetails={movieDetailsShort} />);
+
+  const props = {
+    addNewMovie: jest.fn(),
+    showNotification: jest.fn(),
+    deleteMovie: jest.fn()
+  };
+
+  const movieTile = shallow(
+    <MovieTile movieDetails={movieDetailsShort} {...props} />
+  );
+  movieTile.find('.btn-like').simulate('click');
+
   const movieTile1 = shallow(<MovieTile movieDetails={movieDetailsLong} />);
 
-  it('renders correctly', () => {
+  it('renders correctly - movie with no details', () => {
     expect(movieTileNoDetails).toMatchSnapshot();
   });
 
@@ -23,4 +34,21 @@ describe('MainContent', () => {
   it('renders correctly', () => {
     expect(movieTile1).toMatchSnapshot();
   });
+
+  // Test delete movie from library functionality
+  const movieTileDelete = shallow(
+    <MovieTile movieDetails={movieDetailsLong} {...props} editable={true} />
+  );
+  it('renders correctly', () => {
+    expect(movieTileDelete).toMatchSnapshot();
+  });
+  movieTileDelete.find('.ellipsis').simulate('click');
+
+  const movieTileDelete2 = shallow(
+    <MovieTile movieDetails={movieDetailsLong} {...props} isAdded={true} />
+  );
+  it('renders correctly', () => {
+    expect(movieTileDelete2).toMatchSnapshot();
+  });
+  movieTileDelete2.find('.btn-like').simulate('click');
 });

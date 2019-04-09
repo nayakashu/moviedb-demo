@@ -5,7 +5,8 @@ import { TopMovies } from './TopMovies';
 describe('TopMovies', () => {
   const props = {
     closeLeftNav: () => {},
-    setActivePage: () => {}
+    setActivePage: () => {},
+    topMovies: [{ id: 1 }, { id: 2 }]
   };
 
   const topMovies = shallow(<TopMovies {...props} />);

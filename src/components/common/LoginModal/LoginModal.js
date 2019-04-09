@@ -6,9 +6,10 @@ import './LoginModal.scss';
 import makeModal from '../../hocs/makeModal/makeModal';
 
 export class LoginModal extends Component {
-  performUserLogin = () => {
+  performUserLogin = evt => {
     this.props.setUserLogin();
     this.props.closeLoginForm();
+    evt.preventDefault();
   };
 
   render() {

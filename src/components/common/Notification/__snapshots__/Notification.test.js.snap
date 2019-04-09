@@ -3,7 +3,7 @@
 exports[`Notification renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Connect(Notification) />,
+  Symbol(enzyme.__unrendered__): <Notification />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -16,59 +16,151 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <div
+          className="notif-message"
+        >
+          <i
+            className="material-icons icon-notif"
+          >
+            notifications
+          </i>
+        </div>,
+        <i
+          className="material-icons btn-close"
+        >
+          close
+        </i>,
+      ],
+      "className": "notif-container",
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <i
+              className="material-icons icon-notif"
+            >
+              notifications
+            </i>,
+            undefined,
+          ],
+          "className": "notif-message",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": null,
-        "_currentValue2": null,
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "notifications",
+              "className": "material-icons icon-notif",
+            },
+            "ref": null,
+            "rendered": "notifications",
+            "type": "i",
+          },
+          undefined,
+        ],
+        "type": "div",
       },
-    },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "close",
+          "className": "material-icons btn-close",
+          "onClick": undefined,
+        },
+        "ref": null,
+        "rendered": "close",
+        "type": "i",
+      },
+    ],
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <div
+            className="notif-message"
+          >
+            <i
+              className="material-icons icon-notif"
+            >
+              notifications
+            </i>
+          </div>,
+          <i
+            className="material-icons btn-close"
+          >
+            close
+          </i>,
+        ],
+        "className": "notif-container",
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <i
+                className="material-icons icon-notif"
+              >
+                notifications
+              </i>,
+              undefined,
+            ],
+            "className": "notif-message",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": null,
-          "_currentValue2": null,
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "notifications",
+                "className": "material-icons icon-notif",
+              },
+              "ref": null,
+              "rendered": "notifications",
+              "type": "i",
+            },
+            undefined,
+          ],
+          "type": "div",
         },
-      },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "close",
+            "className": "material-icons btn-close",
+            "onClick": undefined,
+          },
+          "ref": null,
+          "rendered": "close",
+          "type": "i",
+        },
+      ],
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {

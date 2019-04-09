@@ -7,7 +7,7 @@ import makeModal from '../../hocs/makeModal/makeModal';
 import { NOTIF_TYPES } from '../../../appConfig';
 
 export class AddMovieModal extends Component {
-  addMovie = () => {
+  addMovie = evt => {
     this.props.closeAddMovie();
     this.props.showNotification(
       'New movie added successfully',
@@ -19,6 +19,8 @@ export class AddMovieModal extends Component {
 
     // Add the movie - Grave of the fireflies as default
     this.props.addNewMovie(12477);
+
+    evt.preventDefault();
   };
 
   render() {

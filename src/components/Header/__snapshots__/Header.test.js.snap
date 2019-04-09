@@ -1,5 +1,1243 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Header is page active & is user logged in 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header
+    activePage="#/mymovies"
+    isUserLoggedIn={true}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        className="container"
+      >
+        <div
+          className="row main-menu"
+        >
+          <div
+            className="col-sm-3 logo-div"
+          >
+            <i
+              className="material-icons menu-icon"
+            >
+              menu
+            </i>
+            <span
+              className="logo"
+            >
+              <i
+                className="material-icons menu-icon"
+              >
+                timeline
+              </i>
+              <span
+                className="logo-text"
+              >
+                MovieHunt
+              </span>
+            </span>
+          </div>
+          <div
+            className="col-sm-6"
+          >
+            <ul
+              className="menu-items"
+            >
+              <Link
+                to="/"
+              >
+                <li
+                  className=""
+                >
+                  Top Rated
+                </li>
+              </Link>
+              <Link
+                to="/mymovies"
+              >
+                <li
+                  className="active"
+                >
+                  My Movies
+                </li>
+              </Link>
+              <li>
+                Discover
+              </li>
+            </ul>
+          </div>
+          <div
+            className="col-sm-3 login-section"
+          >
+            <span>
+              <button
+                className="btn-add"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  add
+                </i>
+                Add Movie
+              </button>
+              <img
+                alt="User Avatar"
+                className="avatar-img"
+                src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+              />
+            </span>
+          </div>
+        </div>
+      </div>,
+      "className": "header-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="row main-menu"
+        >
+          <div
+            className="col-sm-3 logo-div"
+          >
+            <i
+              className="material-icons menu-icon"
+            >
+              menu
+            </i>
+            <span
+              className="logo"
+            >
+              <i
+                className="material-icons menu-icon"
+              >
+                timeline
+              </i>
+              <span
+                className="logo-text"
+              >
+                MovieHunt
+              </span>
+            </span>
+          </div>
+          <div
+            className="col-sm-6"
+          >
+            <ul
+              className="menu-items"
+            >
+              <Link
+                to="/"
+              >
+                <li
+                  className=""
+                >
+                  Top Rated
+                </li>
+              </Link>
+              <Link
+                to="/mymovies"
+              >
+                <li
+                  className="active"
+                >
+                  My Movies
+                </li>
+              </Link>
+              <li>
+                Discover
+              </li>
+            </ul>
+          </div>
+          <div
+            className="col-sm-3 login-section"
+          >
+            <span>
+              <button
+                className="btn-add"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  add
+                </i>
+                Add Movie
+              </button>
+              <img
+                alt="User Avatar"
+                className="avatar-img"
+                src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+              />
+            </span>
+          </div>
+        </div>,
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <div
+              className="col-sm-3 logo-div"
+            >
+              <i
+                className="material-icons menu-icon"
+              >
+                menu
+              </i>
+              <span
+                className="logo"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  timeline
+                </i>
+                <span
+                  className="logo-text"
+                >
+                  MovieHunt
+                </span>
+              </span>
+            </div>,
+            <div
+              className="col-sm-6"
+            >
+              <ul
+                className="menu-items"
+              >
+                <Link
+                  to="/"
+                >
+                  <li
+                    className=""
+                  >
+                    Top Rated
+                  </li>
+                </Link>
+                <Link
+                  to="/mymovies"
+                >
+                  <li
+                    className="active"
+                  >
+                    My Movies
+                  </li>
+                </Link>
+                <li>
+                  Discover
+                </li>
+              </ul>
+            </div>,
+            <div
+              className="col-sm-3 login-section"
+            >
+              <span>
+                <button
+                  className="btn-add"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    add
+                  </i>
+                  Add Movie
+                </button>
+                <img
+                  alt="User Avatar"
+                  className="avatar-img"
+                  src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                />
+              </span>
+            </div>,
+          ],
+          "className": "row main-menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                <i
+                  className="material-icons menu-icon"
+                >
+                  menu
+                </i>,
+                <span
+                  className="logo"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    timeline
+                  </i>
+                  <span
+                    className="logo-text"
+                  >
+                    MovieHunt
+                  </span>
+                </span>,
+              ],
+              "className": "col-sm-3 logo-div",
+            },
+            "ref": null,
+            "rendered": Array [
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": "menu",
+                  "className": "material-icons menu-icon",
+                  "onClick": undefined,
+                },
+                "ref": null,
+                "rendered": "menu",
+                "type": "i",
+              },
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <i
+                      className="material-icons menu-icon"
+                    >
+                      timeline
+                    </i>,
+                    <span
+                      className="logo-text"
+                    >
+                      MovieHunt
+                    </span>,
+                  ],
+                  "className": "logo",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "timeline",
+                      "className": "material-icons menu-icon",
+                    },
+                    "ref": null,
+                    "rendered": "timeline",
+                    "type": "i",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "MovieHunt",
+                      "className": "logo-text",
+                    },
+                    "ref": null,
+                    "rendered": "MovieHunt",
+                    "type": "span",
+                  },
+                ],
+                "type": "span",
+              },
+            ],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="menu-items"
+              >
+                <Link
+                  to="/"
+                >
+                  <li
+                    className=""
+                  >
+                    Top Rated
+                  </li>
+                </Link>
+                <Link
+                  to="/mymovies"
+                >
+                  <li
+                    className="active"
+                  >
+                    My Movies
+                  </li>
+                </Link>
+                <li>
+                  Discover
+                </li>
+              </ul>,
+              "className": "col-sm-6",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <Link
+                    to="/"
+                  >
+                    <li
+                      className=""
+                    >
+                      Top Rated
+                    </li>
+                  </Link>,
+                  <Link
+                    to="/mymovies"
+                  >
+                    <li
+                      className="active"
+                    >
+                      My Movies
+                    </li>
+                  </Link>,
+                  <li>
+                    Discover
+                  </li>,
+                ],
+                "className": "menu-items",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <li
+                      className=""
+                    >
+                      Top Rated
+                    </li>,
+                    "to": "/",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Top Rated",
+                      "className": "",
+                    },
+                    "ref": null,
+                    "rendered": "Top Rated",
+                    "type": "li",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "class",
+                  "props": Object {
+                    "children": <li
+                      className="active"
+                    >
+                      My Movies
+                    </li>,
+                    "to": "/mymovies",
+                  },
+                  "ref": null,
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "My Movies",
+                      "className": "active",
+                    },
+                    "ref": null,
+                    "rendered": "My Movies",
+                    "type": "li",
+                  },
+                  "type": [Function],
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Discover",
+                  },
+                  "ref": null,
+                  "rendered": "Discover",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <span>
+                <button
+                  className="btn-add"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    add
+                  </i>
+                  Add Movie
+                </button>
+                <img
+                  alt="User Avatar"
+                  className="avatar-img"
+                  src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                />
+              </span>,
+              "className": "col-sm-3 login-section",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <button
+                    className="btn-add"
+                  >
+                    <i
+                      className="material-icons menu-icon"
+                    >
+                      add
+                    </i>
+                    Add Movie
+                  </button>,
+                  <img
+                    alt="User Avatar"
+                    className="avatar-img"
+                    src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                  />,
+                ],
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="material-icons menu-icon"
+                      >
+                        add
+                      </i>,
+                      "Add Movie",
+                    ],
+                    "className": "btn-add",
+                    "onClick": undefined,
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "add",
+                        "className": "material-icons menu-icon",
+                      },
+                      "ref": null,
+                      "rendered": "add",
+                      "type": "i",
+                    },
+                    "Add Movie",
+                  ],
+                  "type": "button",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "alt": "User Avatar",
+                    "className": "avatar-img",
+                    "src": "http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm",
+                  },
+                  "ref": null,
+                  "rendered": null,
+                  "type": "img",
+                },
+              ],
+              "type": "span",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          className="container"
+        >
+          <div
+            className="row main-menu"
+          >
+            <div
+              className="col-sm-3 logo-div"
+            >
+              <i
+                className="material-icons menu-icon"
+              >
+                menu
+              </i>
+              <span
+                className="logo"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  timeline
+                </i>
+                <span
+                  className="logo-text"
+                >
+                  MovieHunt
+                </span>
+              </span>
+            </div>
+            <div
+              className="col-sm-6"
+            >
+              <ul
+                className="menu-items"
+              >
+                <Link
+                  to="/"
+                >
+                  <li
+                    className=""
+                  >
+                    Top Rated
+                  </li>
+                </Link>
+                <Link
+                  to="/mymovies"
+                >
+                  <li
+                    className="active"
+                  >
+                    My Movies
+                  </li>
+                </Link>
+                <li>
+                  Discover
+                </li>
+              </ul>
+            </div>
+            <div
+              className="col-sm-3 login-section"
+            >
+              <span>
+                <button
+                  className="btn-add"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    add
+                  </i>
+                  Add Movie
+                </button>
+                <img
+                  alt="User Avatar"
+                  className="avatar-img"
+                  src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                />
+              </span>
+            </div>
+          </div>
+        </div>,
+        "className": "header-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <div
+            className="row main-menu"
+          >
+            <div
+              className="col-sm-3 logo-div"
+            >
+              <i
+                className="material-icons menu-icon"
+              >
+                menu
+              </i>
+              <span
+                className="logo"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  timeline
+                </i>
+                <span
+                  className="logo-text"
+                >
+                  MovieHunt
+                </span>
+              </span>
+            </div>
+            <div
+              className="col-sm-6"
+            >
+              <ul
+                className="menu-items"
+              >
+                <Link
+                  to="/"
+                >
+                  <li
+                    className=""
+                  >
+                    Top Rated
+                  </li>
+                </Link>
+                <Link
+                  to="/mymovies"
+                >
+                  <li
+                    className="active"
+                  >
+                    My Movies
+                  </li>
+                </Link>
+                <li>
+                  Discover
+                </li>
+              </ul>
+            </div>
+            <div
+              className="col-sm-3 login-section"
+            >
+              <span>
+                <button
+                  className="btn-add"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    add
+                  </i>
+                  Add Movie
+                </button>
+                <img
+                  alt="User Avatar"
+                  className="avatar-img"
+                  src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                />
+              </span>
+            </div>
+          </div>,
+          "className": "container",
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <div
+                className="col-sm-3 logo-div"
+              >
+                <i
+                  className="material-icons menu-icon"
+                >
+                  menu
+                </i>
+                <span
+                  className="logo"
+                >
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    timeline
+                  </i>
+                  <span
+                    className="logo-text"
+                  >
+                    MovieHunt
+                  </span>
+                </span>
+              </div>,
+              <div
+                className="col-sm-6"
+              >
+                <ul
+                  className="menu-items"
+                >
+                  <Link
+                    to="/"
+                  >
+                    <li
+                      className=""
+                    >
+                      Top Rated
+                    </li>
+                  </Link>
+                  <Link
+                    to="/mymovies"
+                  >
+                    <li
+                      className="active"
+                    >
+                      My Movies
+                    </li>
+                  </Link>
+                  <li>
+                    Discover
+                  </li>
+                </ul>
+              </div>,
+              <div
+                className="col-sm-3 login-section"
+              >
+                <span>
+                  <button
+                    className="btn-add"
+                  >
+                    <i
+                      className="material-icons menu-icon"
+                    >
+                      add
+                    </i>
+                    Add Movie
+                  </button>
+                  <img
+                    alt="User Avatar"
+                    className="avatar-img"
+                    src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                  />
+                </span>
+              </div>,
+            ],
+            "className": "row main-menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <i
+                    className="material-icons menu-icon"
+                  >
+                    menu
+                  </i>,
+                  <span
+                    className="logo"
+                  >
+                    <i
+                      className="material-icons menu-icon"
+                    >
+                      timeline
+                    </i>
+                    <span
+                      className="logo-text"
+                    >
+                      MovieHunt
+                    </span>
+                  </span>,
+                ],
+                "className": "col-sm-3 logo-div",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "menu",
+                    "className": "material-icons menu-icon",
+                    "onClick": undefined,
+                  },
+                  "ref": null,
+                  "rendered": "menu",
+                  "type": "i",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": Array [
+                      <i
+                        className="material-icons menu-icon"
+                      >
+                        timeline
+                      </i>,
+                      <span
+                        className="logo-text"
+                      >
+                        MovieHunt
+                      </span>,
+                    ],
+                    "className": "logo",
+                  },
+                  "ref": null,
+                  "rendered": Array [
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "timeline",
+                        "className": "material-icons menu-icon",
+                      },
+                      "ref": null,
+                      "rendered": "timeline",
+                      "type": "i",
+                    },
+                    Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "MovieHunt",
+                        "className": "logo-text",
+                      },
+                      "ref": null,
+                      "rendered": "MovieHunt",
+                      "type": "span",
+                    },
+                  ],
+                  "type": "span",
+                },
+              ],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul
+                  className="menu-items"
+                >
+                  <Link
+                    to="/"
+                  >
+                    <li
+                      className=""
+                    >
+                      Top Rated
+                    </li>
+                  </Link>
+                  <Link
+                    to="/mymovies"
+                  >
+                    <li
+                      className="active"
+                    >
+                      My Movies
+                    </li>
+                  </Link>
+                  <li>
+                    Discover
+                  </li>
+                </ul>,
+                "className": "col-sm-6",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <Link
+                      to="/"
+                    >
+                      <li
+                        className=""
+                      >
+                        Top Rated
+                      </li>
+                    </Link>,
+                    <Link
+                      to="/mymovies"
+                    >
+                      <li
+                        className="active"
+                      >
+                        My Movies
+                      </li>
+                    </Link>,
+                    <li>
+                      Discover
+                    </li>,
+                  ],
+                  "className": "menu-items",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className=""
+                      >
+                        Top Rated
+                      </li>,
+                      "to": "/",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "Top Rated",
+                        "className": "",
+                      },
+                      "ref": null,
+                      "rendered": "Top Rated",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": <li
+                        className="active"
+                      >
+                        My Movies
+                      </li>,
+                      "to": "/mymovies",
+                    },
+                    "ref": null,
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "host",
+                      "props": Object {
+                        "children": "My Movies",
+                        "className": "active",
+                      },
+                      "ref": null,
+                      "rendered": "My Movies",
+                      "type": "li",
+                    },
+                    "type": [Function],
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Discover",
+                    },
+                    "ref": null,
+                    "rendered": "Discover",
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <span>
+                  <button
+                    className="btn-add"
+                  >
+                    <i
+                      className="material-icons menu-icon"
+                    >
+                      add
+                    </i>
+                    Add Movie
+                  </button>
+                  <img
+                    alt="User Avatar"
+                    className="avatar-img"
+                    src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                  />
+                </span>,
+                "className": "col-sm-3 login-section",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <button
+                      className="btn-add"
+                    >
+                      <i
+                        className="material-icons menu-icon"
+                      >
+                        add
+                      </i>
+                      Add Movie
+                    </button>,
+                    <img
+                      alt="User Avatar"
+                      className="avatar-img"
+                      src="http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm"
+                    />,
+                  ],
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": Array [
+                        <i
+                          className="material-icons menu-icon"
+                        >
+                          add
+                        </i>,
+                        "Add Movie",
+                      ],
+                      "className": "btn-add",
+                      "onClick": undefined,
+                    },
+                    "ref": null,
+                    "rendered": Array [
+                      Object {
+                        "instance": null,
+                        "key": undefined,
+                        "nodeType": "host",
+                        "props": Object {
+                          "children": "add",
+                          "className": "material-icons menu-icon",
+                        },
+                        "ref": null,
+                        "rendered": "add",
+                        "type": "i",
+                      },
+                      "Add Movie",
+                    ],
+                    "type": "button",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "alt": "User Avatar",
+                      "className": "avatar-img",
+                      "src": "http://www.gravatar.com/avatar/4986132725905e951d64a41340178e63?s=200&r=pg&d=mm",
+                    },
+                    "ref": null,
+                    "rendered": null,
+                    "type": "img",
+                  },
+                ],
+                "type": "span",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromError": true,
+          "getDerivedStateFromProps": Object {
+            "hasShouldComponentUpdateBug": false,
+          },
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+  Symbol(enzyme.__childContext__): null,
+}
+`;
+
 exports[`Header renders correctly 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],

@@ -707,4 +707,10 @@ describe('Test is movie added functionality', () => {
     const output = isMovieAdded(10000000, userMovies);
     expect(output).toBeFalsy();
   });
+
+  // Negative test case - undefined value for userMovies
+  it('Test for movie does not exist', () => {
+    const output = isMovieAdded(10000000);
+    expect(output).toBeFalsy();
+  });
 });
