@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/routbisu/moviedb-demo/precache-manifest.4a14ae3548c61ab86989a2d512b714ce.js"
+  "/moviedb-demo/precache-manifest.1e2f3dc5d07603006c969d5b080c470e.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/routbisu/moviedb-demo/index.html", {
+workbox.routing.registerNavigationRoute("/moviedb-demo/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
